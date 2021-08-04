@@ -1,0 +1,13 @@
+﻿<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.ui']/*[not(
+        @name='AspectRatioFrameLayout' or
+        @name='AspectRatioFrameLayout.AspectRatioListener' or
+        @name='PlayerControlView' or
+        @name='PlayerControlView.ProgressUpdateListener' or
+        @name='PlayerControlView.VisibilityListener' or
+        @name='PlayerView' or
+        @name='SubtitleView'
+    )]" />
+
+</metadata>

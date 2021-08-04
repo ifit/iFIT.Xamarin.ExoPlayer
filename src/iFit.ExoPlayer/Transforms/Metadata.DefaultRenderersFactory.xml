@@ -1,0 +1,16 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='DefaultRenderersFactory']/constructor
+        /parameter[@name='extensionRendererMode']" name="enumType">Google.Android.ExoPlayer2.ExtensionRendererMode</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='DefaultRenderersFactory']/method[
+        @name='setExtensionRendererMode' or
+        @name='buildVideoRenderers' or
+        @name='buildAudioRenderers' or
+        @name='buildTextRenderers' or
+        @name='buildMetadataRenderers' or
+        @name='buildCameraMotionRenderers' or
+        @name='buildMiscellaneousRenderers'
+    ]/parameter[@name='extensionRendererMode']" name="enumType">Google.Android.ExoPlayer2.ExtensionRendererMode</attr>
+
+</metadata>

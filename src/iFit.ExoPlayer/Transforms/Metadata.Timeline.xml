@@ -1,0 +1,20 @@
+﻿<metadata>
+
+    <!-- NOTE these classes have both public properties and get methods, so they are conflicting a little, thus, we're removing property names -->
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2']/*[
+        @name='Timeline.Window' or
+        @name='TImeline.Period'
+    ]/method" name="propertyName" />
+
+    <!-- NOTE Have no idea why, but previous node doesn't help with this method. That's why it's removed (anyway we have exposed public field) -->
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2']/*[@name='Timeline.Period']
+        /method[@name='getDurationUs' and count(parameter)=0]" />
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='Timeline']/method[
+        @name='getNextWindowIndex' or
+        @name='getPreviousWindowIndex' or
+        @name='getNextPeriodIndex' or
+        @name='isLastPeriod'
+    ]/parameter[@name='repeatMode']" name="enumType">Google.Android.ExoPlayer2.RepeatMode</attr>
+
+</metadata>

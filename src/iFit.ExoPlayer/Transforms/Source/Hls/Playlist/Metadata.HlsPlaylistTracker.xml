@@ -1,0 +1,8 @@
+<metadata>
+
+    <!-- NOTE We removed this node from Metadata because it fails to generate IHlsPlaylistTrackerPlaylistEventListenerImplementor class with some return -->
+    <!-- This node is returned back in C# additions -->
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source.hls.playlist']/*[@name='HlsPlaylistTracker.PlaylistEventListener']/method[
+        @name='onPlaylistError' and count(parameter)=2 and parameter[1][@type='android.net.Uri'] and parameter[2][@type='long']]" />
+
+</metadata>

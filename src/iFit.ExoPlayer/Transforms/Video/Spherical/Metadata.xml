@@ -1,0 +1,5 @@
+<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.video.spherical']/*[not(@name='CameraMotionListener')]" />
+
+</metadata>

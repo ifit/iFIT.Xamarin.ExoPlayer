@@ -1,0 +1,38 @@
+﻿<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.upstream']/*[not(
+        @name='Allocation' or
+        @name='Allocator' or
+        @name='BandwidthMeter' or
+        @name='BandwidthMeter.EventListener' or
+        @name='BaseDataSource' or
+        @name='DataReader' or
+        @name='DataSource' or
+        @name='DataSource.Factory' or
+        @name='DataSpec' or
+        @name='DataSpec.Builder' or
+        @name='DefaultAllocator' or
+        @name='DefaultBandwidthMeter' or
+        @name='DefaultBandwidthMeter.Builder' or
+        @name='DefaultDataSource' or
+        @name='DefaultDataSourceFactory' or
+        @name='DefaultHttpDataSource' or
+        @name='DefaultHttpDataSource.Factory' or
+        @name='HttpDataSource' or
+        @name='HttpDataSource.Factory' or
+        @name='HttpDataSource.RequestProperties' or
+        @name='Loader' or
+        @name='Loader.Callback' or
+        @name='Loader.Loadable' or
+        @name='Loader.LoadErrorAction' or
+        @name='Loader.ReleaseCallback' or
+        @name='LoaderErrorThrower' or
+        @name='LoadErrorHandlingPolicy' or
+        @name='LoadErrorHandlingPolicy.LoadErrorInfo' or
+        @name='ParsingLoadable' or
+        @name='ParsingLoadable.Parser' or
+        @name='StatsDataSource' or
+        @name='TransferListener'
+    )]" />
+
+</metadata>

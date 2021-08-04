@@ -1,0 +1,13 @@
+﻿<metadata>
+
+    <!--NOTE Fixing override's return types to its base types since C# doesn't support such feature yet-->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source.hls.playlist']/*[@name='HlsMasterPlaylist']/method[
+        @name='copy' and count(parameter)=1 and parameter[1][@type='java.util.List&lt;com.google.android.exoplayer2.offline.StreamKey&gt;']
+    ]" name="managedReturn">Google.Android.ExoPlayer2.Source.Hls.Playlist.HlsPlaylist</attr>
+        
+    <!--NOTE Putting override keyword-->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source.hls.playlist']/*[@name='HlsMasterPlaylist']/method[
+        @name='copy' and count(parameter)=1 and parameter[1][@type='java.util.List&lt;com.google.android.exoplayer2.offline.StreamKey&gt;']
+    ]" name="managedOverride">override</attr>
+
+</metadata>

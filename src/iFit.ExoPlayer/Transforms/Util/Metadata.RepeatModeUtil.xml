@@ -1,0 +1,18 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='RepeatModeUtil']/method[@name='getNextRepeatMode']
+        /parameter[@name='currentMode']" name="enumType">Google.Android.ExoPlayer2.RepeatMode</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='RepeatModeUtil']/method[@name='getNextRepeatMode']
+        /parameter[@name='enabledModes']" name="enumType">Google.Android.ExoPlayer2.RepeatMode</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='RepeatModeUtil']/method[@name='getNextRepeatMode']"
+        name="enumReturn">Google.Android.ExoPlayer2.RepeatMode</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='RepeatModeUtil']/method[@name='isRepeatModeEnabled']
+        /parameter[@name='repeatMode']" name="enumType">Google.Android.ExoPlayer2.RepeatMode</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='RepeatModeUtil']/method[@name='isRepeatModeEnabled']
+        /parameter[@name='enabledModes']" name="enumType">Google.Android.ExoPlayer2.RepeatMode</attr>
+
+</metadata>

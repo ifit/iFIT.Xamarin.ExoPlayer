@@ -1,0 +1,27 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source']/*[@name='MediaSourceEventListener.EventDispatcher']/method[
+        @name='loadStarted' or
+        @name='loadCompleted' or
+        @name='loadCanceled' or
+        @name='loadError' or
+        @name='downstreamFormatChanged'
+    ]/parameter[@name='trackSelectionReason']" name="enumType">Google.Android.ExoPlayer2.SelectionReason</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source']/*[@name='MediaSourceEventListener.EventDispatcher']/method[
+        @name='loadStarted' or
+        @name='loadCompleted' or
+        @name='loadCanceled' or
+        @name='loadError'
+    ]/parameter[@name='dataType']" name="enumType">Google.Android.ExoPlayer2.DataType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source']/*[@name='MediaSourceEventListener.EventDispatcher']/method[
+        @name='loadStarted' or
+        @name='loadCompleted' or
+        @name='loadCanceled' or
+        @name='loadError' or
+        @name='upstreamDiscarded' or
+        @name='downstreamFormatChanged'
+    ]/parameter[@name='trackType']" name="enumType">Google.Android.ExoPlayer2.TrackType</attr>
+
+</metadata>

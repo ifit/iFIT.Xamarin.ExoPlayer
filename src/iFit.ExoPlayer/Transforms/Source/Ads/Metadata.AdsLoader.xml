@@ -1,0 +1,11 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source.ads']/*[@name='AdsLoader']/method[@name='setSupportedContentTypes']
+        /parameter[@name='p0']" name="managedName">contentTypes</attr>
+
+    <!-- Type doesn't support proper enum overrides and params is missing due to this issue -->
+    <!-- TODO Create relevant issue or PR to Java.Interop -->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source.ads']/*[@name='AdsLoader']/method[@name='setSupportedContentTypes']
+        /parameter[@name='p0']" name="type">Google.Android.ExoPlayer2.ContentType[]</attr>
+
+</metadata>

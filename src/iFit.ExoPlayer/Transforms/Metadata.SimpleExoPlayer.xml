@@ -1,0 +1,32 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='SimpleExoPlayer.Builder']/method[@name='setVideoScalingMode']
+        /parameter[@name='videoScalingMode']" name="enumType">Google.Android.ExoPlayer2.VideoScalingMode</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='SimpleExoPlayer.Builder']/method[@name='setWakeMode']
+        /parameter[@name='wakeMode']" name="enumType">Google.Android.ExoPlayer2.WakeMode</attr>
+
+    <!-- NOTE Without explicit enum declaration generated override property is not casting to from integer and to integer -->
+    <!-- TODO create an issue or even PR to the Xamarin/Java.Interop repository -->
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='SimpleExoPlayer']/method[@name='getRepeatMode']"
+        name="enumReturn">Google.Android.ExoPlayer2.RepeatMode</attr>
+
+    <!-- NOTE Without explicit enum declaration generated override property is not casting to from integer and to integer -->
+    <!-- TODO create an issue or even PR to the Xamarin/Java.Interop repository -->
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='SimpleExoPlayer']/method[@name='setRepeatMode']
+        /parameter[1]" name="enumType">Google.Android.ExoPlayer2.RepeatMode</attr>
+
+    <!-- NOTE Without explicit enum declaration generated override property is not casting to from integer and to integer -->
+    <!-- TODO create an issue or even PR to the Xamarin/Java.Interop repository -->
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='SimpleExoPlayer']/method[@name='getVideoScalingMode']"
+        name="enumReturn">Google.Android.ExoPlayer2.VideoScalingMode</attr>
+
+    <!-- NOTE Without explicit enum declaration generated override property is not casting to from integer and to integer -->
+    <!-- TODO create an issue or even PR to the Xamarin/Java.Interop repository -->
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='SimpleExoPlayer']/method[@name='setVideoScalingMode']
+        /parameter[1]" name="enumType">Google.Android.ExoPlayer2.VideoScalingMode</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='SimpleExoPlayer']/method[@name='setWakeMode']
+        /parameter[@name='wakeMode']" name="enumType">Google.Android.ExoPlayer2.WakeMode</attr>
+
+</metadata>

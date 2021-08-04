@@ -1,0 +1,8 @@
+﻿<metadata>
+
+    <!-- NOTE For some reason this method is not generating in base interface. Have no idea why -->
+    <!-- TODO Investigate it, maybe make PR or issue to Xamarin/Java.Interop -->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='EventLogger']/method[@name='onPlaybackSuppressionReasonChanged']
+        /parameter[@name='playbackSuppressionReason']" name="enumType">Google.Android.ExoPlayer2.PlaybackSuppressionReason</attr>
+
+</metadata>

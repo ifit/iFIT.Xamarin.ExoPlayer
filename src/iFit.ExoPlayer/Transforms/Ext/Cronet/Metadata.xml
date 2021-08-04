@@ -1,0 +1,9 @@
+<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.ext.cronet']/*[not(
+        @name='CronetDataSource' or
+        @name='CronetDataSource.Factory' or
+        @name='CronetEngineWrapper'
+    )]" />
+
+</metadata>

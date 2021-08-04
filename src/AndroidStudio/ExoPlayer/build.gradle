@@ -1,0 +1,73 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.kezong.fat-aar'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    embed "com.google.android.exoplayer:exoplayer:$exoplayer_version"
+    embed "com.google.android.exoplayer:exoplayer-common:$exoplayer_version"
+    embed "com.google.android.exoplayer:exoplayer-extractor:$exoplayer_version"
+    embed "com.google.android.exoplayer:exoplayer-core:$exoplayer_version"
+    embed "com.google.android.exoplayer:exoplayer-dash:$exoplayer_version"
+    embed "com.google.android.exoplayer:exoplayer-hls:$exoplayer_version"
+    embed "com.google.android.exoplayer:exoplayer-smoothstreaming:$exoplayer_version"
+    embed "com.google.android.exoplayer:exoplayer-transformer:$exoplayer_version"
+    embed "com.google.android.exoplayer:exoplayer-ui:$exoplayer_version"
+
+    embed "com.google.android.exoplayer:extension-cronet:$exoplayer_version"
+
+    // Some of these notes are not mandatory, they're taken from
+    // Tasks/android/androidDependencies task in gradle tab
+    // If will comment the rows beneath you run this task,
+    // then most of these dependencies will be listed in release/releaseCompileClassPath
+    // (except recyclerview, this dependency lack is showing during gradle build fail, and arch.core:core-runtime - unknown reason, but without it Xamarin build fails)
+    // Same nuget packages should be added to the bindings library project
+    // Otherwise you might receive a crash
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    implementation "androidx.annotation:annotation:$androidx_annotation_version"
+    implementation "androidx.arch.core:core-common:$androidx_arch_core_version"
+    implementation "androidx.arch.core:core-runtime:$androidx_arch_core_version"
+    implementation "androidx.collection:collection:$androidx_collection_version"
+    implementation "androidx.core:core:$androidx_core_version"
+    implementation "androidx.lifecycle:lifecycle-common:$androidx_lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime:$androidx_lifecycle_version"
+    implementation "androidx.media:media:$androidx_media_version"
+    implementation "androidx.recyclerview:recyclerview:$androidx_recyclerview_version"
+    implementation "androidx.versionedparcelable:versionedparcelable:$androidx_versionedparcelable_version"
+
+    implementation "com.google.guava:guava:$guava_version"
+    implementation "com.google.guava:failureaccess:$guava_failureaccess_version"
+    implementation "com.google.guava:listenablefuture:$guava_listenablefuture_version"
+
+    implementation "com.google.android.gms:play-services-cronet:$android_gms_play_services_cronet_version"
+}

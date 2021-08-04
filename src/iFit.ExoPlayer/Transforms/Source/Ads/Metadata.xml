@@ -1,0 +1,14 @@
+<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source.ads']/*[not(
+        @name='AdsLoader' or
+        @name='AdsLoader.AdViewProvider' or
+        @name='AdsLoader.EventListener' or
+        @name='AdsLoader.OverlayInfo' or
+        @name='AdsMediaSource' or
+        @name='AdsMediaSource.AdLoadException' or
+        @name='AdPlaybackState' or
+        @name='AdPlaybackState.AdGroup'
+    )]" />
+ 
+</metadata>

@@ -1,0 +1,47 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='Format.Builder']/method[@name='setPcmEncoding']
+        /parameter[@name='pcmEncoding']" name="enumType">Google.Android.ExoPlayer2.PcmEncoding</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='Format.Builder']/method[@name='setRoleFlags']
+        /parameter[@name='roleFlags']" name="enumType">Google.Android.ExoPlayer2.RoleFlags</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='Format.Builder']/method[@name='setSelectionFlags']
+        /parameter[@name='selectionFlags']" name="enumType">Google.Android.ExoPlayer2.RoleFlags</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='Format.Builder']/method[@name='setStereoMode']
+        /parameter[@name='stereoMode']" name="enumType">Google.Android.ExoPlayer2.StereoMode</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='Format']/field[@name='pcmEncoding']" 
+        name="enumType">Google.Android.ExoPlayer2.PcmEncoding</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='Format']/field[@name='roleFlags']"
+        name="enumType">Google.Android.ExoPlayer2.RoleFlags</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='Format']/field[@name='stereoMode']"
+        name="enumType">Google.Android.ExoPlayer2.StereoMode</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='Format']/method[@name='createAudioSampleFormat']
+        /parameter[@name='pcmEncoding']" name="enumType">Google.Android.ExoPlayer2.PcmEncoding</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='Format']/method[
+        @name='createVideoContainerFormat' or
+        @name='createAudioContainerFormat' or
+        @name='createTextContainerFormat' or
+        @name='createContainerFormat'
+    ]/parameter[@name='roleFlags']" name="enumType">Google.Android.ExoPlayer2.RoleFlags</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='Format']/method[
+        @name='createVideoContainerFormat' or
+        @name='createAudioContainerFormat' or
+        @name='createAudioSampleFormat' or
+        @name='createTextContainerFormat' or
+        @name='createTextSampleFormat' or
+        @name='createImageSampleFormat' or
+        @name='createContainerFormat'
+    ]/parameter[@name='selectionFlags']" name="enumType">Google.Android.ExoPlayer2.SelectionFlags</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='Format']/method[@name='createVideoSampleFormat']
+        /parameter[@name='stereoMode']" name="enumType">Google.Android.ExoPlayer2.StereoMode</attr>
+
+</metadata>

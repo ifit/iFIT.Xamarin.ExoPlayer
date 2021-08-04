@@ -1,0 +1,14 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='MimeTypes']/method[@name='registerCustomMimeType']
+        /parameter[@name='trackType']" name="enumType">Google.Android.ExoPlayer2.TrackType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='MimeTypes']/method[
+        @name='getTrackType' or
+        @name='getTrackTypeOfCodec'
+    ]" name="enumReturn">Google.Android.ExoPlayer2.TrackType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='MimeTypes']/method[@name='getEncoding']"
+        name="enumReturn">Google.Android.ExoPlayer2.Encoding</attr>
+
+</metadata>

@@ -1,0 +1,52 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='Util']/method[@name='getNetworkType']"
+        name="enumReturn">Google.Android.ExoPlayer2.NetworkType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='Util']/method[@name='getAudioContentTypeForStreamType']"
+        name="enumReturn">Google.Android.ExoPlayer2.AudioContentType</attr>
+    
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='Util']/method[
+        @name='getCodecCountOfType' or
+        @name='getCodecsOfType' or
+        @name='getTrackTypeString'
+    ]/parameter[@name='trackType']" name="enumType">Google.Android.ExoPlayer2.TrackType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='Util']/method[@name='isEncodingLinearPcm']
+        /parameter[@name='encoding']" name="enumType">Google.Android.ExoPlayer2.Encoding</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='Util']/method[@name='getPcmEncoding']"
+        name="enumReturn">Google.Android.ExoPlayer2.PcmEncoding</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='Util']/method[@name='getPcmFormat']
+        /parameter[@name='pcmEncoding']" name="enumType">Google.Android.ExoPlayer2.PcmEncoding</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='Util']/method[@name='isEncodingHighResolutionPcm']
+        /parameter[@name='encoding']" name="enumType">Google.Android.ExoPlayer2.PcmEncoding</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='Util']/method[@name='getPcmFrameSize']
+        /parameter[@name='pcmEncoding']" name="enumType">Google.Android.ExoPlayer2.PcmEncoding</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='Util']/method[
+        @name='getAudioUsageForStreamType' or
+        @name='getAudioContentTypeForStreamType'
+    ]/parameter[@name='streamType']" name="enumType">Google.Android.ExoPlayer2.StreamType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='Util']/method[@name='getStreamTypeForAudioUsage']"
+        name="enumReturn">Google.Android.ExoPlayer2.StreamType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='Util']/method[
+        @name='inferContentType' or
+        @name='inferContentTypeForUriAndMimeType'
+    ]" name="enumReturn">Google.Android.ExoPlayer2.ContentType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='Util']/method[@name='getAdaptiveMimeTypeForContentType']
+        /parameter[@name='contentType']" name="enumType">Google.Android.ExoPlayer2.ContentType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='Util']/method[@name='getAudioUsageForStreamType']"
+        name="enumReturn">Google.Android.ExoPlayer2.AudioUsage</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='Util']/method[@name='getStreamTypeForAudioUsage']
+        /parameter[@name='usage']" name="enumType">Google.Android.ExoPlayer2.AudioUsage</attr>
+
+</metadata>

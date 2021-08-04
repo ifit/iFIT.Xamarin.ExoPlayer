@@ -1,0 +1,6 @@
+<metadata>
+
+    <!-- NOTE Explicitly removing this node and explicitly declaring it with Additions because bindings generator fails with namespaces -->
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source.ads']/*[@name='AdPlaybackState.AdGroup']/field[@name='uris']" />
+
+</metadata>

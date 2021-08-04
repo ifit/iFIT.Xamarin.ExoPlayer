@@ -1,0 +1,13 @@
+﻿<metadata>
+
+    <!--NOTE Fixing override's return types to its base types since C# doesn't support such feature yet-->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.ext.cronet']/*[@name='CronetDataSource.Factory']/method[
+        @name='createDataSource' and count(parameter)=0
+    ]" name="managedReturn">Google.Android.ExoPlayer2.Upstream.IDataSource</attr>
+
+    <!--NOTE Fixing override's return types to its base types since C# doesn't support such feature yet-->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.ext.cronet']/*[@name='CronetDataSource.Factory']/method[
+        @name='setDefaultRequestProperties' and count(parameter)=1 and parameter[1][@type='java.util.Map&lt;java.lang.String, java.lang.String&gt;']
+    ]" name="managedReturn">Google.Android.ExoPlayer2.Upstream.IHttpDataSourceFactory</attr>
+
+</metadata>

@@ -1,0 +1,46 @@
+*.pidb
+*.swp
+*.nib
+Resource.designer.cs
+
+packages
+Components
+*.mo
+
+#Autosave files
+*~
+
+# Build/test output
+obj
+bin
+test-results
+
+# VS sometimes writes these for no apparent reason
+_UpgradeReport_Files
+UpgradeLog.*
+
+# Per-user data
+*.DS_Store
+*.sln.cache
+*.suo
+*.userprefs
+*.usertasks
+*.user
+
+# ReSharper
+*_Resharper.*
+*.Resharper
+
+# dotCover
+*.dotCover
+
+*.orig
+*.apk
+.vs/
+app.config
+.idea
+Thumbs.db
+*.Cache
+FodyWeavers.xsd
+
+.gradle

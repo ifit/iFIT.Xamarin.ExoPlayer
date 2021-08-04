@@ -1,0 +1,9 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/*[@name='DefaultBandwidthMeter.Builder']/method[@name='setInitialBitrateEstimate']
+        /parameter[@name='networkType']" name="enumType">Google.Android.ExoPlayer2.NetworkType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/*[@name='DefaultBandwidthMeter']/method[@name='setNetworkTypeOverride']
+        /parameter[@name='networkType']" name="enumType">Google.Android.ExoPlayer2.NetworkType</attr>
+
+</metadata>

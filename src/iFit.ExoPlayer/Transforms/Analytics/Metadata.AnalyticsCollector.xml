@@ -1,0 +1,6 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.analytics']/*[@name='AnalyticsCollector']/method[@name='onRepeatModeChanged']
+        /parameter[@name='repeatMode']" name="enumType">Google.Android.ExoPlayer2.RepeatMode</attr>
+
+</metadata>

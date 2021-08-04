@@ -1,0 +1,18 @@
+﻿<metadata>
+
+    <!--NOTE Removing nodes to hide inherited memebers which are added in additions -->
+    <!-- bindings generator doesn't know how to produce new keyword -->
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.trackselection']/*[@name='DefaultTrackSelector.Parameters']/field[@name='CREATOR']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.trackselection']/*[@name='DefaultTrackSelector.Parameters']/field[@name='DEFAULT_WITHOUT_CONTEXT']" />
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.trackselection']/*[@name='DefaultTrackSelector.Parameters']/method[@name='getDefaults' and count(parameter)=1 and parameter[1][@type='android.content.Context']]" />
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.trackselection']/*[@name='DefaultTrackSelector.SelectionOverride']
+        /field[@name='reason']" name="enumType">Google.Android.ExoPlayer2.SelectionReason</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.trackselection']/*[@name='DefaultTrackSelector.SelectionOverride']/constructor
+        /parameter[@name='reason']" name="enumType">Google.Android.ExoPlayer2.SelectionReason</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.trackselection']/*[@name='DefaultTrackSelector']/method[@name='selectOtherTrack']
+        /parameter[@name='trackType']" name="enumType">Google.Android.ExoPlayer2.TrackType</attr>
+
+</metadata>

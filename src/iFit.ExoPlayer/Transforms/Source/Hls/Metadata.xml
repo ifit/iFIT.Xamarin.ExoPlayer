@@ -1,0 +1,12 @@
+﻿<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source.hls']/*[not(
+        @name='HlsDataSourceFactory' or
+        @name='HlsExtractorFactory' or
+        @name='HlsMediaChunkExtractor' or
+        @name='HlsMediaSource' or
+        @name='HlsMediaSource.Factory' or
+        @name='MediaParserHlsMediaChunkExtractor'
+    )]" />
+
+</metadata>

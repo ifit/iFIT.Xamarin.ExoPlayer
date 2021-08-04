@@ -1,0 +1,18 @@
+﻿<metadata>
+
+    <!-- NOTE fixing parameter name -->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.extractor']/*[@name='ExtractorOutput']/method[@name='seekMap']
+        /parameter[@name='p0']" name="managedName">seekMap</attr>
+
+    <!-- NOTE fixing parameter name -->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.extractor']/*[@name='ExtractorOutput']/method[@name='track']
+        /parameter[@name='p0']" name="managedName">id</attr>
+
+    <!-- NOTE fixing parameter name -->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.extractor']/*[@name='ExtractorOutput']/method[@name='track']
+        /parameter[@name='p1']" name="managedName">type</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.extractor']/*[@name='ExtractorOutput']/method[@name='track']
+        /parameter[@name='p1']" name="enumType">Google.Android.ExoPlayer2.TrackType</attr>
+
+</metadata>

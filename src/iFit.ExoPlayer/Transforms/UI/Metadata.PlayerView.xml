@@ -1,0 +1,7 @@
+﻿<metadata>
+
+    <!-- NOTE Removing Deprecated Method: Use setControlDispatcher(ControlDispatcher) instead. -->
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.ui']/*[@name='PlayerView']/method[
+        @name='setPlaybackPreparer' and count(parameter)=1]"/>
+
+</metadata>

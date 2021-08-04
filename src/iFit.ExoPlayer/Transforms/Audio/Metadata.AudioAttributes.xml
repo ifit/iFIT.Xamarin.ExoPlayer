@@ -1,0 +1,27 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.audio']/*[@name='AudioAttributes.Builder']/method[@name='setAllowedCapturePolicy']
+        /parameter[@name='allowedCapturePolicy']" name="enumType">Google.Android.ExoPlayer2.AudioAllowedCapturePolicy</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.audio']/*[@name='AudioAttributes.Builder']/method[@name='setContentType']
+        /parameter[@name='contentType']" name="enumType">Google.Android.ExoPlayer2.AudioContentType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.audio']/*[@name='AudioAttributes.Builder']/method[@name='setFlags']
+        /parameter[@name='flags']" name="enumType">Google.Android.ExoPlayer2.AudioFlags</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.audio']/*[@name='AudioAttributes.Builder']/method[@name='setUsage']
+        /parameter[@name='usage']" name="enumType">Google.Android.ExoPlayer2.AudioUsage</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.audio']/*[@name='AudioAttributes']/field[@name='allowedCapturePolicy']"
+        name="enumType">Google.Android.ExoPlayer2.AudioAllowedCapturePolicy</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.audio']/*[@name='AudioAttributes']/field[@name='contentType']"
+        name="enumType">Google.Android.ExoPlayer2.AudioContentType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.audio']/*[@name='AudioAttributes']/field[@name='flags']"
+        name="enumType">Google.Android.ExoPlayer2.AudioFlags</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.audio']/*[@name='AudioAttributes']/field[@name='usage']"
+        name="enumType">Google.Android.ExoPlayer2.AudioUsage</attr>
+
+</metadata>

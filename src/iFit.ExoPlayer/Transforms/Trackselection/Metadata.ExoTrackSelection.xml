@@ -1,0 +1,6 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.trackselection']/*[@name='ExoTrackSelection']/method[@name='getSelectionReason']"
+        name="enumReturn">Google.Android.ExoPlayer2.SelectionReason</attr>
+
+</metadata>

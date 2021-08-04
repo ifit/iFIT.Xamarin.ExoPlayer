@@ -1,0 +1,9 @@
+<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.metadata']/*[not(
+        @name='Metadata' or
+        @name='Metadata.Entry' or
+        @name='MetadataOutput'
+    )]" />
+
+</metadata>

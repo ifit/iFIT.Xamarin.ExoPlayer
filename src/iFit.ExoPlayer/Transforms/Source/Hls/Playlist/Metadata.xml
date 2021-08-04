@@ -1,0 +1,21 @@
+<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source.hls.playlist']/*[not(
+        @name='HlsMasterPlaylist' or
+        @name='HlsMasterPlaylist.Rendition' or
+        @name='HlsMasterPlaylist.Variant' or
+        @name='HlsMediaPlaylist' or
+        @name='HlsMediaPlaylist.Part' or
+        @name='HlsMediaPlaylist.RenditionReport' or
+        @name='HlsMediaPlaylist.Segment' or
+        @name='HlsMediaPlaylist.SegmentBase' or
+        @name='HlsMediaPlaylist.ServerControl' or
+        @name='HlsPlaylist' or
+        @name='HlsPlaylistParserFactory' or
+        @name='HlsPlaylistTracker' or
+        @name='HlsPlaylistTracker.Factory' or
+        @name='HlsPlaylistTracker.PlaylistEventListener' or
+        @name='HlsPlaylistTracker.PrimaryPlaylistListener'
+    )]" />
+
+</metadata>

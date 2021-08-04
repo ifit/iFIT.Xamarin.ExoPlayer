@@ -1,0 +1,15 @@
+﻿<metadata>
+
+    <!-- NOTE More proper renaming, by default it makes const like 'CENCTYPECenc' -->
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='C']/field[@name='CENC_TYPE_cenc']" name="managedName">CencTypeCenc</attr>
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='C']/field[@name='CENC_TYPE_cbc1']" name="managedName">CencTypeCbc1</attr>
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='C']/field[@name='CENC_TYPE_cens']" name="managedName">CencTypeCens</attr>
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='C']/field[@name='CENC_TYPE_cbcs']" name="managedName">CencTypeCbcs</attr>
+
+    <!-- NOTE Removing all MSG_* because they're obsolete and no need to create enum for this -->
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2']/*[@name='C']/field[starts-with(@name, 'MSG_')]" />
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='C']/method[@name='getFormatSupportString']
+        /parameter[@name='formatSupport']" name="enumType">Google.Android.ExoPlayer2.FormatSupport</attr>
+
+</metadata>

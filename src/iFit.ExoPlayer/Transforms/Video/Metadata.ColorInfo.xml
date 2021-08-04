@@ -1,0 +1,21 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.video']/*[@name='ColorInfo']/field[@name='colorSpace']"
+        name="enumType">Google.Android.ExoPlayer2.ColorSpace</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.video']/*[@name='ColorInfo']/field[@name='colorRange']"
+        name="enumType">Google.Android.ExoPlayer2.ColorRange</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.video']/*[@name='ColorInfo']/field[@name='colorTransfer']"
+        name="enumType">Google.Android.ExoPlayer2.ColorTransfer</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.video']/*[@name='ColorInfo']/constructor
+        /parameter[@name='colorSpace']" name="enumType">Google.Android.ExoPlayer2.ColorSpace</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.video']/*[@name='ColorInfo']/constructor
+        /parameter[@name='colorRange']" name="enumType">Google.Android.ExoPlayer2.ColorRange</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.video']/*[@name='ColorInfo']/constructor
+        /parameter[@name='colorTransfer']" name="enumType">Google.Android.ExoPlayer2.ColorTransfer</attr>
+
+</metadata>

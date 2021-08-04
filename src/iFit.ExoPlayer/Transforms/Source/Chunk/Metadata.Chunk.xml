@@ -1,0 +1,15 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source.chunk']/*[@name='Chunk']
+        /field[@name='type']" name="enumType">Google.Android.ExoPlayer2.DataType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source.chunk']/*[@name='Chunk']
+        /field[@name='trackSelectionReason']" name="enumType">Google.Android.ExoPlayer2.SelectionReason</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source.chunk']/*[@name='Chunk']/constructor
+        /parameter[@name='type']" name="enumType">Google.Android.ExoPlayer2.DataType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source.chunk']/*[@name='Chunk']/constructor
+        /parameter[@name='trackSelectionReason']" name="enumType">Google.Android.ExoPlayer2.SelectionReason</attr>
+
+</metadata>

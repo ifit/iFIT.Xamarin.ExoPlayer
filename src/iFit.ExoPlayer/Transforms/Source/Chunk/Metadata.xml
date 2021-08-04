@@ -1,0 +1,9 @@
+<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source.chunk']/*[not(
+        @name='Chunk' or
+        @name='MediaChunk' or
+        @name='MediaChunkIterator'
+    )]" />
+
+</metadata>

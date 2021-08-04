@@ -1,0 +1,14 @@
+﻿<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.decoder']/*[not(
+        @name='Buffer' or
+        @name='CryptoInfo' or
+        @name='Decoder' or
+        @name='DecoderCounters' or
+        @name='DecoderException' or
+        @name='DecoderInputBuffer' or
+        @name='DecoderReuseEvaluation' or
+        @name='OutputBuffer'
+    )]" />
+
+</metadata>

@@ -1,0 +1,6 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.ext.cronet']/*[@name='CronetEngineWrapper']/method[@name='getCronetEngineSource']"
+        name="enumReturn">Google.Android.ExoPlayer2.Ext.Cronet.CronetEngineSource</attr>
+
+</metadata>

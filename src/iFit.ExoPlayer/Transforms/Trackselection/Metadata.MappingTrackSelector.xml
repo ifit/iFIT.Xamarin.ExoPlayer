@@ -1,0 +1,9 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.trackselection']/*[@name='MappingTrackSelector.MappedTrackInfo']/method[@name='getRendererType']"
+        name="enumReturn">Google.Android.ExoPlayer2.TrackType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.trackselection']/*[@name='MappingTrackSelector.MappedTrackInfo']/method[@name='getTypeSupport']
+        /parameter[@name='trackType']" name="enumType">Google.Android.ExoPlayer2.TrackType</attr>
+
+</metadata>

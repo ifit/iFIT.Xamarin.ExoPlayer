@@ -1,0 +1,425 @@
+<enum-field-mappings>
+
+    <!-- @interface Type -->
+    <mapping jni-class="com/google/android/exoplayer2/ExoPlaybackException" clr-enum-type="Google.Android.ExoPlayer2.ExoPlaybackExceptionType">
+        <field jni-name="TYPE_SOURCE" clr-name="Source" value="0" />
+        <field jni-name="TYPE_RENDERER" clr-name="Renderer" value="1" />
+        <field jni-name="TYPE_UNEXPECTED" clr-name="Unexpected" value="2" />
+        <field jni-name="TYPE_REMOTE" clr-name="Remote" value="3" />
+    </mapping>
+
+    <!-- @interface NetworkType -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.NetworkType">
+        <field jni-name="NETWORK_TYPE_UNKNOWN" clr-name="Unknown" value="0" />
+        <field jni-name="NETWORK_TYPE_OFFLINE" clr-name="Offline" value="1" />
+        <field jni-name="NETWORK_TYPE_WIFI" clr-name="WiFi" value="2" />
+        <field jni-name="NETWORK_TYPE_2G" clr-name="Cellular2G" value="3" />
+        <field jni-name="NETWORK_TYPE_3G" clr-name="Cellular3G" value="4" />
+        <field jni-name="NETWORK_TYPE_4G" clr-name="Cellular4G" value="5" />
+        <field jni-name="NETWORK_TYPE_5G" clr-name="Cellular5G" value="9" />
+        <field jni-name="NETWORK_TYPE_CELLULAR_UNKNOWN" clr-name="CellularUnknown" value="6" />
+        <field jni-name="NETWORK_TYPE_ETHERNET" clr-name="Ethernet" value="7" />
+        <field jni-name="NETWORK_TYPE_OTHER" clr-name="Other" value="8" />
+    </mapping>
+
+    <!-- SELECTION_REASON_ -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.SelectionReason">
+        <field jni-name="SELECTION_REASON_UNKNOWN" clr-name="Unknown" value="0" />
+        <field jni-name="SELECTION_REASON_INITIAL" clr-name="Initial" value="1" />
+        <field jni-name="SELECTION_REASON_MANUAL" clr-name="Manual" value="2" />
+        <field jni-name="SELECTION_REASON_ADAPTIVE" clr-name="Adaptive" value="3" />
+        <field jni-name="SELECTION_REASON_TRICK_PLAY" clr-name="TrickPlay" value="4" />
+        <field jni-name="SELECTION_REASON_CUSTOM_BASE" clr-name="CustomBase" value="10_000" />
+    </mapping>
+
+    <!-- @interface BufferFlags -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.BufferFlags" bitfield="true">
+        <field jni-name="BUFFER_FLAG_KEY_FRAME" clr-name="KeyFrame" value="global::Android.Media.MediaCodecBufferFlags.KeyFrame" />
+        <field jni-name="BUFFER_FLAG_END_OF_STREAM" clr-name="EndOfStream" value="global::Android.Media.MediaCodecBufferFlags.EndOfStream" />
+        <field jni-name="BUFFER_FLAG_HAS_SUPPLEMENTAL_DATA" clr-name="SupplementalData" value="1 &lt;&lt; 28" />
+        <field jni-name="BUFFER_FLAG_LAST_SAMPLE" clr-name="LastSample" value="1 &lt;&lt; 29" />
+        <field jni-name="BUFFER_FLAG_ENCRYPTED" clr-name="Encrypted" value="1 &lt;&lt; 30" />
+        <field jni-name="BUFFER_FLAG_DECODE_ONLY" clr-name="DecodeOnly" value="1 &lt;&lt; 31" />
+    </mapping>
+
+    <!-- @interface AudioAllowedCapturePolicy -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.AudioAllowedCapturePolicy">
+        <field jni-name="ALLOW_CAPTURE_BY_ALL" clr-name="ByAll" value="global::Android.Media.CapturePolicies.ByAll" />
+        <field jni-name="ALLOW_CAPTURE_BY_NONE" clr-name="ByNone" value="global::Android.Media.CapturePolicies.ByNone" />
+        <field jni-name="ALLOW_CAPTURE_BY_SYSTEM" clr-name="BySystem" value="global::Android.Media.CapturePolicies.BySystem" />
+    </mapping>
+
+    <!-- @interface CryptoMode -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.CryptoMode">
+        <field jni-name="CRYPTO_MODE_UNENCRYPTED" clr-name="Unencrypted" value="global::Android.Media.MediaCodecCryptoMode.Unencrypted" />
+        <field jni-name="CRYPTO_MODE_AES_CTR" clr-name="AesCtr" value="global::Android.Media.MediaCodecCryptoMode.AesCtr" />
+        <field jni-name="CRYPTO_MODE_AES_CBC" clr-name="AesCbc" value="global::Android.Media.MediaCodecCryptoMode.AesCbc" />
+    </mapping>
+
+    <!-- @interface AudioFocusGain -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.AudioFocus">
+        <field jni-name="AUDIOFOCUS_NONE" clr-name="None" value="global::Android.Media.AudioFocus.None" />
+        <field jni-name="AUDIOFOCUS_GAIN" clr-name="Gain" value="global::Android.Media.AudioFocus.Gain" />
+        <field jni-name="AUDIOFOCUS_GAIN_TRANSIENT" clr-name="GainTransient" value="global::Android.Media.AudioFocus.GainTransient" />
+        <field jni-name="AUDIOFOCUS_GAIN_TRANSIENT_MAY_DUCK" clr-name="GainTransientMayDuck" value="global::Android.Media.AudioFocus.GainTransientMayDuck" />
+        <field jni-name="AUDIOFOCUS_GAIN_TRANSIENT_EXCLUSIVE" clr-name="GainTransientExclusive" value="global::Android.Media.AudioFocus.GainTransientExclusive" />
+    </mapping>
+
+    <!-- @interface ColorRange -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.ColorRange">
+        <field clr-name="NoValue" value="global::Google.Android.ExoPlayer2.Format.NoValue" />
+        <field jni-name="COLOR_RANGE_LIMITED" clr-name="Limited" value="global::Android.Media.ColorRange.Limited" />
+        <field jni-name="COLOR_RANGE_FULL" clr-name="Full" value="global::Android.Media.ColorRange.Full" />
+    </mapping>
+
+    <!-- @interface ColorSpace -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.ColorSpace">
+        <field clr-name="NoValue" value="global::Google.Android.ExoPlayer2.Format.NoValue" />
+        <field jni-name="COLOR_SPACE_BT709" clr-name="Bt709" value="global::Android.Media.ColorStandard.Bt709" />
+        <field jni-name="COLOR_SPACE_BT601" clr-name="Bt601" value="global::Android.Media.ColorStandard.Bt601Pal" />
+        <field jni-name="COLOR_SPACE_BT2020" clr-name="Bt2020" value="global::Android.Media.ColorStandard.Bt2020" />
+    </mapping>
+
+    <!-- @interface ColorTransfer -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.ColorTransfer">
+        <field clr-name="NoValue" value="global::Google.Android.ExoPlayer2.Format.NoValue" />
+        <field jni-name="COLOR_TRANSFER_SDR" clr-name="Sdr" value="global::Android.Media.ColorTransfer.SdrVideo" />
+        <field jni-name="COLOR_TRANSFER_ST2084" clr-name="St2084" value="global::Android.Media.ColorTransfer.St2084" />
+        <field jni-name="COLOR_TRANSFER_HLG" clr-name="Hlg" value="global::Android.Media.ColorTransfer.Hlg" />
+    </mapping>
+    
+    <!-- @interface AudioContentType -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.AudioContentType">
+        <field jni-name="CONTENT_TYPE_MOVIE" clr-name="Movie" value="global::Android.Media.AudioContentType.Movie" />
+        <field jni-name="CONTENT_TYPE_MUSIC" clr-name="Music" value="global::Android.Media.AudioContentType.Music" />
+        <field jni-name="CONTENT_TYPE_SONIFICATION" clr-name="Sonification" value="global::Android.Media.AudioContentType.Sonification" />
+        <field jni-name="CONTENT_TYPE_SPEECH" clr-name="Speech" value="global::Android.Media.AudioContentType.Speech" />
+        <field jni-name="CONTENT_TYPE_UNKNOWN" clr-name="Unknown" value="global::Android.Media.AudioContentType.Unknown" />
+    </mapping>
+
+    <!-- DATA_TYPE_ -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.DataType">
+        <field jni-name="DATA_TYPE_UNKNOWN" clr-name="Unknown" value="0" />
+        <field jni-name="DATA_TYPE_MEDIA" clr-name="Media" value="1" />
+        <field jni-name="DATA_TYPE_MEDIA_INITIALIZATION" clr-name="MediaInitialization" value="2" />
+        <field jni-name="DATA_TYPE_DRM" clr-name="Drm" value="3" />
+        <field jni-name="DATA_TYPE_MANIFEST" clr-name="Manifest" value="4" />
+        <field jni-name="DATA_TYPE_TIME_SYNCHRONIZATION" clr-name="TimeSynchronization" value="5" />
+        <field jni-name="DATA_TYPE_AD" clr-name="Ad" value="6" />
+        <field jni-name="DATA_TYPE_MEDIA_PROGRESSIVE_LIVE" clr-name="MediaProgressiveLive" value="7" />
+        <field jni-name="DATA_TYPE_CUSTOM_BASE" clr-name="CustomBase" value="10_000" />
+    </mapping>
+
+    <!-- TRACK_TYPE_ -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.TrackType">
+        <field jni-name="TRACK_TYPE_UNKNOWN" clr-name="Unknown" value="-1" />
+        <field jni-name="TRACK_TYPE_DEFAULT" clr-name="Default" value="0" />
+        <field jni-name="TRACK_TYPE_AUDIO" clr-name="Audio" value="1" />
+        <field jni-name="TRACK_TYPE_VIDEO" clr-name="Video" value="2" />
+        <field jni-name="TRACK_TYPE_TEXT" clr-name="Text" value="3" />
+        <field jni-name="TRACK_TYPE_IMAGE" clr-name="Image" value="4" />
+        <field jni-name="TRACK_TYPE_METADATA" clr-name="Metadata" value="5" />
+        <field jni-name="TRACK_TYPE_CAMERA_MOTION" clr-name="CameraMotion" value="6" />
+        <field jni-name="TRACK_TYPE_NONE" clr-name="None" value="7" />
+        <field jni-name="TRACK_TYPE_CUSTOM_BASE" clr-name="CustomBase" value="10_000" />
+    </mapping>
+
+    <!-- @interface Encoding -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.Encoding">
+        <field clr-name="NoValue" value="global::Google.Android.ExoPlayer2.Format.NoValue" />
+        <field jni-name="ENCODING_INVALID" clr-name="Invalid" value="global::Android.Media.Encoding.Invalid" />
+        <field jni-name="ENCODING_PCM_8BIT" clr-name="Pcm8bit" value="global::Android.Media.Encoding.Pcm8bit" />
+        <field jni-name="ENCODING_PCM_16BIT" clr-name="Pcm16bit" value="global::Android.Media.Encoding.Pcm16bit" />
+        <field jni-name="ENCODING_PCM_16BIT_BIG_ENDIAN" clr-name="Pcm16bitBigEndian" value="0x10000000" />
+        <field jni-name="ENCODING_PCM_24BIT" clr-name="Pcm24bit" value="0x20000000" />
+        <field jni-name="ENCODING_PCM_32BIT" clr-name="Pcm32bit" value="0x30000000" />
+        <field jni-name="ENCODING_PCM_FLOAT" clr-name="PcmFloat" value="global::Android.Media.Encoding.PcmFloat" />
+        <field jni-name="ENCODING_MP3" clr-name="Mp3" value="global::Android.Media.Encoding.Mp3" />
+        <field jni-name="ENCODING_AAC_LC" clr-name="AacLc" value="global::Android.Media.Encoding.AacLc" />
+        <field jni-name="ENCODING_AAC_HE_V1" clr-name="AacHeV1" value="global::Android.Media.Encoding.AacHeV1" />
+        <field jni-name="ENCODING_AAC_HE_V2" clr-name="AacHeV2" value="global::Android.Media.Encoding.AacHeV2" />
+        <field jni-name="ENCODING_AAC_XHE" clr-name="AacXhe" value="global::Android.Media.Encoding.AacXhe" />
+        <field jni-name="ENCODING_AAC_ELD" clr-name="AacEld" value="global::Android.Media.Encoding.AacEld" />
+        <field jni-name="ENCODING_AAC_ER_BSAC" clr-name="AacErBsac" value="0x40000000" />
+        <field jni-name="ENCODING_AC3" clr-name="Ac3" value="global::Android.Media.Encoding.Ac3" />
+        <field jni-name="ENCODING_E_AC3" clr-name="EAc3" value="global::Android.Media.Encoding.EAc3" />
+        <field jni-name="ENCODING_E_AC3_JOC" clr-name="EAc3Joc" value="global::Android.Media.Encoding.EAc3Joc" />
+        <field jni-name="ENCODING_AC4" clr-name="Ac4" value="global::Android.Media.Encoding.Ac4" />
+        <field jni-name="ENCODING_DTS" clr-name="Dts" value="global::Android.Media.Encoding.Dts" />
+        <field jni-name="ENCODING_DTS_HD" clr-name="DtsHd" value="global::Android.Media.Encoding.DtsHd" />
+        <field jni-name="ENCODING_DOLBY_TRUEHD" clr-name="DolbyTruehd" value="global::Android.Media.Encoding.DolbyTruehd" />
+    </mapping>
+
+    <!-- @interface PcmEncoding -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.PcmEncoding">
+        <field clr-name="NoValue" value="global::Google.Android.ExoPlayer2.Format.NoValue" />
+        <field clr-name="Invalid" value="global::Google.Android.ExoPlayer2.Encoding.Invalid" />
+        <field clr-name="Pcm8bit" value="global::Google.Android.ExoPlayer2.Encoding.Pcm8bit" />
+        <field clr-name="Pcm16bit" value="global::Google.Android.ExoPlayer2.Encoding.Pcm16bit" />
+        <field clr-name="Pcm16bitBigEndian" value="global::Google.Android.ExoPlayer2.Encoding.Pcm16bitBigEndian" />
+        <field clr-name="Pcm24bit" value="global::Google.Android.ExoPlayer2.Encoding.Pcm24bit" />
+        <field clr-name="Pcm32bit" value="global::Google.Android.ExoPlayer2.Encoding.Pcm32bit" />
+        <field clr-name="PcmFloat" value="global::Google.Android.ExoPlayer2.Encoding.PcmFloat" />
+    </mapping>
+
+    <!-- @interface AudioFlags -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.AudioFlags" bitfield="true">
+        <field jni-name="FLAG_AUDIBILITY_ENFORCED" clr-name="AudibilityEnforced" value="global::Android.Media.AudioFlags.AudibilityEnforced" />
+    </mapping>
+
+    <!-- @interface FormatSupport -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.FormatSupport">
+        <field jni-name="FORMAT_HANDLED" clr-name="Handled" value="0b100" />
+        <field jni-name="FORMAT_EXCEEDS_CAPABILITIES" clr-name="ExceedsCapabilities" value="0b011" />
+        <field jni-name="FORMAT_UNSUPPORTED_DRM" clr-name="UnsupportedDrm" value="0b010" />
+        <field jni-name="FORMAT_UNSUPPORTED_SUBTYPE" clr-name="UnsupportedSubtype" value="0b001" />
+        <field jni-name="FORMAT_UNSUPPORTED_TYPE" clr-name="UnsupportedType" value="0b000" />
+    </mapping>
+
+    <!-- @interface Projection -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.Projection">
+        <field clr-name="NoValue" value="global::Google.Android.ExoPlayer2.Format.NoValue" />
+        <field jni-name="PROJECTION_RECTANGULAR" clr-name="Rectangular" value="0" />
+        <field jni-name="PROJECTION_EQUIRECTANGULAR" clr-name="Equirectangular" value="1" />
+        <field jni-name="PROJECTION_CUBEMAP" clr-name="Cubemap" value="2" />
+        <field jni-name="PROJECTION_MESH" clr-name="Mesh" value="3" />
+    </mapping>
+
+    <!-- @interface RoleFlags -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.RoleFlags" bitfield="true">
+        <field jni-name="ROLE_FLAG_MAIN" clr-name="Main" value="1" />
+        <field jni-name="ROLE_FLAG_ALTERNATE" clr-name="Alternate" value="1 &lt;&lt; 1" />
+        <field jni-name="ROLE_FLAG_SUPPLEMENTARY" clr-name="Supplementary" value="1 &lt;&lt; 2" />
+        <field jni-name="ROLE_FLAG_COMMENTARY" clr-name="Commentary" value="1 &lt;&lt; 3" />
+        <field jni-name="ROLE_FLAG_DUB" clr-name="Dub" value="1 &lt;&lt; 4" />
+        <field jni-name="ROLE_FLAG_EMERGENCY" clr-name="Emergency" value="1 &lt;&lt; 5" />
+        <field jni-name="ROLE_FLAG_CAPTION" clr-name="Caption" value="1 &lt;&lt; 6" />
+        <field jni-name="ROLE_FLAG_SUBTITLE" clr-name="Subtitle" value="1 &lt;&lt; 7" />
+        <field jni-name="ROLE_FLAG_SIGN" clr-name="Sign" value="1 &lt;&lt; 8" />
+        <field jni-name="ROLE_FLAG_DESCRIBES_VIDEO" clr-name="DescribesVideo" value="1 &lt;&lt; 9" />
+        <field jni-name="ROLE_FLAG_DESCRIBES_MUSIC_AND_SOUND" clr-name="DescribesMusicAndSound" value="1 &lt;&lt; 10" />
+        <field jni-name="ROLE_FLAG_ENHANCED_DIALOG_INTELLIGIBILITY" clr-name="EnhancedDialogIntelligibility" value="1 &lt;&lt; 11" />
+        <field jni-name="ROLE_FLAG_TRANSCRIBES_DIALOG" clr-name="TranscribesDialog" value="1 &lt;&lt; 12" />
+        <field jni-name="ROLE_FLAG_EASY_TO_READ" clr-name="EasyToRead" value="1 &lt;&lt; 13" />
+        <field jni-name="ROLE_FLAG_TRICK_PLAY" clr-name="TrickPlay" value="1 &lt;&lt; 14" />
+    </mapping>
+
+    <!-- @interface SelectionFlags -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.SelectionFlags" bitfield="true">
+        <field jni-name="SELECTION_FLAG_DEFAULT" clr-name="Default" value="1" />
+        <field jni-name="SELECTION_FLAG_FORCED" clr-name="Forced" value="1 &lt;&lt; 1" />
+        <field jni-name="SELECTION_FLAG_AUTOSELECT" clr-name="Autoselect" value="1 &lt;&lt; 2" />
+    </mapping>
+
+    <!-- @interface StereoMode -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.StereoMode">
+        <field jni-name="STEREO_MODE_MONO" clr-name="Mono" value="0" />
+        <field jni-name="STEREO_MODE_TOP_BOTTOM" clr-name="TopBottom" value="1" />
+        <field jni-name="STEREO_MODE_LEFT_RIGHT" clr-name="LeftRight" value="2" />
+        <field jni-name="STEREO_MODE_STEREO_MESH" clr-name="StereoMesh" value="3" />
+    </mapping>
+
+    <!-- @interface StreamType -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.StreamType">
+        <field jni-name="STREAM_TYPE_ALARM" clr-name="Alarm" value="global::Android.Media.Stream.Alarm" />
+        <field jni-name="STREAM_TYPE_DTMF" clr-name="Dtmf" value="global::Android.Media.Stream.Dtmf" />
+        <field jni-name="STREAM_TYPE_MUSIC" clr-name="Music" value="global::Android.Media.Stream.Music" />
+        <field jni-name="STREAM_TYPE_NOTIFICATION" clr-name="Notification" value="global::Android.Media.Stream.Notification" />
+        <field jni-name="STREAM_TYPE_RING" clr-name="Ring" value="global::Android.Media.Stream.Ring" />
+        <field jni-name="STREAM_TYPE_SYSTEM" clr-name="System" value="global::Android.Media.Stream.System" />
+        <field jni-name="STREAM_TYPE_VOICE_CALL" clr-name="VoiceCall" value="global::Android.Media.Stream.VoiceCall" />
+        <field jni-name="STREAM_TYPE_DEFAULT" clr-name="Default" value="Music" />
+    </mapping>
+
+    <!-- @interface ContentType -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.ContentType">
+        <field jni-name="TYPE_DASH" clr-name="Dash" value="0" />
+        <field jni-name="TYPE_SS" clr-name="Ss" value="1" />
+        <field jni-name="TYPE_HLS" clr-name="Hls" value="2" />
+        <field jni-name="TYPE_OTHER" clr-name="Other" value="3" />
+    </mapping>
+
+    <!-- @interface AudioUsage -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.AudioUsage">
+        <field jni-name="USAGE_ALARM" clr-name="Alarm" value="global::Android.Media.AudioUsageKind.Alarm" />
+        <field jni-name="USAGE_ASSISTANCE_ACCESSIBILITY" clr-name="AssistanceAccessibility" value="global::Android.Media.AudioUsageKind.AssistanceAccessibility" />
+        <field jni-name="USAGE_ASSISTANCE_NAVIGATION_GUIDANCE" clr-name="AssistanceNavigationGuidance" value="global::Android.Media.AudioUsageKind.AssistanceNavigationGuidance" />
+        <field jni-name="USAGE_ASSISTANCE_SONIFICATION" clr-name="AssistanceSonification" value="global::Android.Media.AudioUsageKind.AssistanceSonification" />
+        <field jni-name="USAGE_ASSISTANT" clr-name="Assistant" value="global::Android.Media.AudioUsageKind.Assistant" />
+        <field jni-name="USAGE_GAME" clr-name="Game" value="global::Android.Media.AudioUsageKind.Game" />
+        <field jni-name="USAGE_MEDIA" clr-name="Media" value="global::Android.Media.AudioUsageKind.Media" />
+        <field jni-name="USAGE_NOTIFICATION" clr-name="Notification" value="global::Android.Media.AudioUsageKind.Notification" />
+        <field jni-name="USAGE_NOTIFICATION_COMMUNICATION_DELAYED" clr-name="NotificationCommunicationDelayed" value="global::Android.Media.AudioUsageKind.NotificationCommunicationDelayed" />
+        <field jni-name="USAGE_NOTIFICATION_COMMUNICATION_INSTANT" clr-name="NotificationCommunicationInstant" value="global::Android.Media.AudioUsageKind.NotificationCommunicationInstant" />
+        <field jni-name="USAGE_NOTIFICATION_COMMUNICATION_REQUEST" clr-name="NotificationCommunicationRequest" value="global::Android.Media.AudioUsageKind.NotificationCommunicationRequest" />
+        <field jni-name="USAGE_NOTIFICATION_EVENT" clr-name="NotificationEvent" value="global::Android.Media.AudioUsageKind.NotificationEvent" />
+        <field jni-name="USAGE_NOTIFICATION_RINGTONE" clr-name="NotificationRingtone" value="global::Android.Media.AudioUsageKind.NotificationRingtone" />
+        <field jni-name="USAGE_UNKNOWN" clr-name="Unknown" value="global::Android.Media.AudioUsageKind.Unknown" />
+        <field jni-name="USAGE_VOICE_COMMUNICATION" clr-name="VoiceCommunication" value="global::Android.Media.AudioUsageKind.VoiceCommunication" />
+        <field jni-name="USAGE_VOICE_COMMUNICATION_SIGNALLING" clr-name="VoiceCommunicationSignalling" value="global::Android.Media.AudioUsageKind.VoiceCommunicationSignalling" />
+    </mapping>
+
+    <!-- @interface VideoOutputMode -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.VideoOutputMode">
+        <field jni-name="VIDEO_OUTPUT_MODE_NONE" clr-name="None" value="-1" />
+        <field jni-name="VIDEO_OUTPUT_MODE_YUV" clr-name="Yuv" value="0" />
+        <field jni-name="VIDEO_OUTPUT_MODE_SURFACE_YUV" clr-name="SurfaceYuv" value="1" />
+    </mapping>
+
+    <!-- @interface VideoScalingMode -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.VideoScalingMode">  
+        <field jni-name="VIDEO_SCALING_MODE_SCALE_TO_FIT" clr-name="ScaleToFit" value="global::Android.Media.VideoScalingMode.ScaleToFit" />
+        <field jni-name="VIDEO_SCALING_MODE_SCALE_TO_FIT_WITH_CROPPING" clr-name="ScaleToFitWithCropping" value="global::Android.Media.VideoScalingMode.ScaleToFitWithCropping" />
+        <field jni-name="VIDEO_SCALING_MODE_DEFAULT" clr-name="Default" value="ScaleToFit" />
+    </mapping>
+
+    <!-- @interface WakeMode -->
+    <mapping jni-class="com/google/android/exoplayer2/C" clr-enum-type="Google.Android.ExoPlayer2.WakeMode">
+        <field jni-name="WAKE_MODE_NONE" clr-name="None" value="0" />
+        <field jni-name="WAKE_MODE_LOCAL" clr-name="Local" value="1" />
+        <field jni-name="WAKE_MODE_NETWORK" clr-name="Network" value="2" />
+    </mapping>
+
+    <!-- @interface ExtensionRendererMode -->
+    <mapping jni-class="com/google/android/exoplayer2/DefaultRenderersFactory" clr-enum-type="Google.Android.ExoPlayer2.ExtensionRendererMode">
+        <field jni-name="EXTENSION_RENDERER_MODE_OFF" clr-name="Off" value="0" />
+        <field jni-name="EXTENSION_RENDERER_MODE_ON" clr-name="On" value="1" />
+        <field jni-name="EXTENSION_RENDERER_MODE_PREFER" clr-name="Prefer" value="2" />
+    </mapping>
+
+    <!-- @interface State -->
+    <mapping jni-interface="com/google/android/exoplayer2/Player" clr-enum-type="Google.Android.ExoPlayer2.PlaybackState">
+        <field jni-name="STATE_IDLE" clr-name="Idle" value="1" />
+        <field jni-name="STATE_BUFFERING" clr-name="Buffering" value="2" />
+        <field jni-name="STATE_READY" clr-name="Ready" value="3" />
+        <field jni-name="STATE_ENDED" clr-name="Ended" value="4" />
+    </mapping>
+    
+    <!-- @interface PlayWhenReadyChangeReason -->
+    <mapping jni-interface="com/google/android/exoplayer2/Player" clr-enum-type="Google.Android.ExoPlayer2.PlayWhenReadyChangeReason">
+        <field jni-name="PLAY_WHEN_READY_CHANGE_REASON_USER_REQUEST" clr-name="UserRequest" value="1" />
+        <field jni-name="PLAY_WHEN_READY_CHANGE_REASON_AUDIO_FOCUS_LOSS" clr-name="AudioFocusLoss" value="2" />
+        <field jni-name="PLAY_WHEN_READY_CHANGE_REASON_AUDIO_BECOMING_NOISY" clr-name="AudioBecomingNoisy" value="3" />
+        <field jni-name="PLAY_WHEN_READY_CHANGE_REASON_REMOTE" clr-name="Remote" value="4" />
+        <field jni-name="PLAY_WHEN_READY_CHANGE_REASON_END_OF_MEDIA_ITEM" clr-name="EndOfMediaItem" value="5" />
+    </mapping>
+    
+    <!-- @interface PlaybackSuppressionReason -->
+    <mapping jni-interface="com/google/android/exoplayer2/Player" clr-enum-type="Google.Android.ExoPlayer2.PlaybackSuppressionReason">
+        <field jni-name="PLAYBACK_SUPPRESSION_REASON_NONE" clr-name="None" value="0" />
+        <field jni-name="PLAYBACK_SUPPRESSION_REASON_TRANSIENT_AUDIO_FOCUS_LOSS" clr-name="TransientAudioFocusLoss" value="1" />
+    </mapping>
+    
+    <!-- @interface RepeatMode -->
+    <mapping jni-interface="com/google/android/exoplayer2/Player" clr-enum-type="Google.Android.ExoPlayer2.RepeatMode" bitfield="true">
+        <field jni-name="REPEAT_MODE_OFF" clr-name="Off" value="0" />
+        <field jni-name="REPEAT_MODE_ONE" clr-name="One" value="1" />
+        <field jni-name="REPEAT_MODE_ALL" clr-name="All" value="2" />
+    </mapping>
+    
+    <mapping jni-interface="com/google/android/exoplayer2/Player" clr-enum-type="Google.Android.ExoPlayer2.DiscontinuityReason">
+        <field jni-name="DISCONTINUITY_REASON_PERIOD_TRANSITION" clr-name="PeriodTransition" value="0" />
+        <field jni-name="DISCONTINUITY_REASON_SEEK" clr-name="Seek" value="1" />
+        <field jni-name="DISCONTINUITY_REASON_SEEK_ADJUSTMENT" clr-name="SeekAdjustment" value="2" />
+        <field jni-name="DISCONTINUITY_REASON_AD_INSERTION" clr-name="AdInsertion" value="3" />
+        <field jni-name="DISCONTINUITY_REASON_INTERNAL" clr-name="Internal" value="4" />
+    </mapping>
+    
+    <mapping jni-interface="com/google/android/exoplayer2/Player" clr-enum-type="Google.Android.ExoPlayer2.TimelineChangeReason">
+        <field jni-name="TIMELINE_CHANGE_REASON_PLAYLIST_CHANGED" clr-name="PlaylistChanged" value="0" />
+        <field jni-name="TIMELINE_CHANGE_REASON_SOURCE_UPDATE" clr-name="SourceUpdate" value="1" />
+    </mapping>
+    
+    <mapping jni-interface="com/google/android/exoplayer2/Player" clr-enum-type="Google.Android.ExoPlayer2.MediaItemTransitionReason">
+        <field jni-name="MEDIA_ITEM_TRANSITION_REASON_REPEAT" clr-name="Repeat" value="0" />
+        <field jni-name="MEDIA_ITEM_TRANSITION_REASON_AUTO" clr-name="Auto" value="1" />
+        <field jni-name="MEDIA_ITEM_TRANSITION_REASON_SEEK" clr-name="Seek" value="2" />
+        <field jni-name="MEDIA_ITEM_TRANSITION_REASON_PLAYLIST_CHANGED" clr-name="PlaylistChanged" value="3" />
+    </mapping>
+    
+    <mapping jni-interface="com/google/android/exoplayer2/Player" clr-enum-type="Google.Android.ExoPlayer2.PlayerEventFlags">
+        <field jni-name="EVENT_TIMELINE_CHANGED" clr-name="TimelineChanged" value="0" />
+        <field jni-name="EVENT_MEDIA_ITEM_TRANSITION" clr-name="MediaItemTransition" value="1" />
+        <field jni-name="EVENT_TRACKS_CHANGED" clr-name="TracksChanged" value="2" />
+        <field jni-name="EVENT_STATIC_METADATA_CHANGED" clr-name="StaticMetadataChanged" value="3" />
+        <field jni-name="EVENT_IS_LOADING_CHANGED" clr-name="IsLoadingChanged" value="4" />
+        <field jni-name="EVENT_PLAYBACK_STATE_CHANGED" clr-name="PlaybackStateChanged" value="5" />
+        <field jni-name="EVENT_PLAY_WHEN_READY_CHANGED" clr-name="PlayWhenReadyChanged" value="6" />
+        <field jni-name="EVENT_PLAYBACK_SUPPRESSION_REASON_CHANGED" clr-name="PlaybackSuppressionReasonChanged" value="7" />
+        <field jni-name="EVENT_IS_PLAYING_CHANGED" clr-name="IsPlayingChanged" value="8" />
+        <field jni-name="EVENT_REPEAT_MODE_CHANGED" clr-name="RepeatModeChanged" value="9" />
+        <field jni-name="EVENT_SHUFFLE_MODE_ENABLED_CHANGED" clr-name="ShuffleModeEnabledChanged" value="10" />
+        <field jni-name="EVENT_PLAYER_ERROR" clr-name="PlayerError" value="11" />
+        <field jni-name="EVENT_POSITION_DISCONTINUITY" clr-name="PositionDiscontinuity" value="12" />
+        <field jni-name="EVENT_PLAYBACK_PARAMETERS_CHANGED" clr-name="PlaybackParametersChanged" value="13" />
+    </mapping>
+    
+    <mapping jni-interface="com/google/android/exoplayer2/analytics/AnalyticsListener" clr-enum-type="Google.Android.ExoPlayer2.Analytics.AnalyticsEventFlags">
+        <field jni-name="EVENT_TIMELINE_CHANGED" clr-name="TimelineChanged" value="global::Google.Android.ExoPlayer2.PlayerEventFlags.TimelineChanged" />
+        <field jni-name="EVENT_MEDIA_ITEM_TRANSITION" clr-name="MediaItemTransition" value="global::Google.Android.ExoPlayer2.PlayerEventFlags.MediaItemTransition" />
+        <field jni-name="EVENT_TRACKS_CHANGED" clr-name="TracksChanged" value="global::Google.Android.ExoPlayer2.PlayerEventFlags.TracksChanged" />
+        <field jni-name="EVENT_STATIC_METADATA_CHANGED" clr-name="StaticMetadataChanged" value="global::Google.Android.ExoPlayer2.PlayerEventFlags.StaticMetadataChanged" />
+        <field jni-name="EVENT_IS_LOADING_CHANGED" clr-name="IsLoadingChanged" value="global::Google.Android.ExoPlayer2.PlayerEventFlags.IsLoadingChanged" />
+        <field jni-name="EVENT_PLAYBACK_STATE_CHANGED" clr-name="PlaybackStateChanged" value="global::Google.Android.ExoPlayer2.PlayerEventFlags.PlaybackStateChanged" />
+        <field jni-name="EVENT_PLAY_WHEN_READY_CHANGED" clr-name="PlayWhenReadyChanged" value="global::Google.Android.ExoPlayer2.PlayerEventFlags.PlayWhenReadyChanged" />
+        <field jni-name="EVENT_PLAYBACK_SUPPRESSION_REASON_CHANGED" clr-name="PlaybackSuppressionReasonChanged" value="global::Google.Android.ExoPlayer2.PlayerEventFlags.PlaybackSuppressionReasonChanged" />
+        <field jni-name="EVENT_IS_PLAYING_CHANGED" clr-name="IsPlayingChanged" value="global::Google.Android.ExoPlayer2.PlayerEventFlags.IsPlayingChanged" />
+        <field jni-name="EVENT_REPEAT_MODE_CHANGED" clr-name="RepeatModeChanged" value="global::Google.Android.ExoPlayer2.PlayerEventFlags.RepeatModeChanged" />
+        <field jni-name="EVENT_SHUFFLE_MODE_ENABLED_CHANGED" clr-name="ShuffleModeEnabledChanged" value="global::Google.Android.ExoPlayer2.PlayerEventFlags.ShuffleModeEnabledChanged" />
+        <field jni-name="EVENT_PLAYER_ERROR" clr-name="PlayerError" value="global::Google.Android.ExoPlayer2.PlayerEventFlags.PlayerError" />
+        <field jni-name="EVENT_POSITION_DISCONTINUITY" clr-name="PositionDiscontinuity" value="global::Google.Android.ExoPlayer2.PlayerEventFlags.PositionDiscontinuity" />
+        <field jni-name="EVENT_PLAYBACK_PARAMETERS_CHANGED" clr-name="PlaybackParametersChanged" value="global::Google.Android.ExoPlayer2.PlayerEventFlags.PlaybackParametersChanged" />
+        <field jni-name="EVENT_LOAD_STARTED" clr-name="LoadStarted" value="1000" />
+        <field jni-name="EVENT_LOAD_COMPLETED" clr-name="LoadCompleted" value="1001" />
+        <field jni-name="EVENT_LOAD_CANCELED" clr-name="LoadCanceled" value="1002" />
+        <field jni-name="EVENT_LOAD_ERROR" clr-name="LoadError" value="1003" />
+        <field jni-name="EVENT_DOWNSTREAM_FORMAT_CHANGED" clr-name="DownstreamFormatChanged" value="1004" />
+        <field jni-name="EVENT_UPSTREAM_DISCARDED" clr-name="UpstreamDiscarded" value="1005" />
+        <field jni-name="EVENT_BANDWIDTH_ESTIMATE" clr-name="BandwidthEstimate" value="1006" />
+        <field jni-name="EVENT_METADATA" clr-name="Metadata" value="1007" />
+        <field jni-name="EVENT_AUDIO_ENABLED" clr-name="AudioEnabled" value="1008" />
+        <field jni-name="EVENT_AUDIO_DECODER_INITIALIZED" clr-name="AudioDecoderInitialized" value="1009" />
+        <field jni-name="EVENT_AUDIO_INPUT_FORMAT_CHANGED" clr-name="AudioInputFormatChanged" value="1010" />
+        <field jni-name="EVENT_AUDIO_POSITION_ADVANCING" clr-name="AudioPositionAdvancing" value="1011" />
+        <field jni-name="EVENT_AUDIO_UNDERRUN" clr-name="AudioUnderrun" value="1012" />
+        <field jni-name="EVENT_AUDIO_DECODER_RELEASED" clr-name="AudioDecoderReleased" value="1013" />
+        <field jni-name="EVENT_AUDIO_DISABLED" clr-name="AudioDisabled" value="1014" />
+        <field jni-name="EVENT_AUDIO_SESSION_ID" clr-name="AudioSessionId" value="1015" />
+        <field jni-name="EVENT_AUDIO_ATTRIBUTES_CHANGED" clr-name="AudioAttributesChanged" value="1016" />
+        <field jni-name="EVENT_SKIP_SILENCE_ENABLED_CHANGED" clr-name="SkipSilenceEnabledChanged" value="1017" />
+        <field jni-name="EVENT_AUDIO_SINK_ERROR" clr-name="AudioSinkError" value="1018" />
+        <field jni-name="EVENT_VOLUME_CHANGED" clr-name="VolumeChanged" value="1019" />
+        <field jni-name="EVENT_VIDEO_ENABLED" clr-name="VideoEnabled" value="1020" />
+        <field jni-name="EVENT_VIDEO_DECODER_INITIALIZED" clr-name="VideoDecoderInitialized" value="1021" />
+        <field jni-name="EVENT_VIDEO_INPUT_FORMAT_CHANGED" clr-name="VideoInputFormatChanged" value="1022" />
+        <field jni-name="EVENT_DROPPED_VIDEO_FRAMES" clr-name="DroppedVideoFrames" value="1023" />
+        <field jni-name="EVENT_VIDEO_DECODER_RELEASED" clr-name="VideoDecoderReleased" value="1024" />
+        <field jni-name="EVENT_VIDEO_DISABLED" clr-name="VideoDisabled" value="1025" />
+        <field jni-name="EVENT_VIDEO_FRAME_PROCESSING_OFFSET" clr-name="VideoFrameProcessingOffset" value="1026" />
+        <field jni-name="EVENT_RENDERED_FIRST_FRAME" clr-name="RenderedFirstFrame" value="1027" />
+        <field jni-name="EVENT_VIDEO_SIZE_CHANGED" clr-name="VideoSizeChanged" value="1028" />
+        <field jni-name="EVENT_SURFACE_SIZE_CHANGED" clr-name="SurfaceSizeChanged" value="1029" />
+        <field jni-name="EVENT_DRM_SESSION_ACQUIRED" clr-name="DrmSessionAcquired" value="1030" />
+        <field jni-name="EVENT_DRM_KEYS_LOADED" clr-name="DrmKeysLoaded" value="1031" />
+        <field jni-name="EVENT_DRM_SESSION_MANAGER_ERROR" clr-name="DrmSessionManagerError" value="1032" />
+        <field jni-name="EVENT_DRM_KEYS_RESTORED" clr-name="DrmKeysRestored" value="1033" />
+        <field jni-name="EVENT_DRM_KEYS_REMOVED" clr-name="DrmKeysRemoved" value="1034" />
+        <field jni-name="EVENT_DRM_SESSION_RELEASED" clr-name="DrmSessionReleased" value="1035" />
+        <field jni-name="EVENT_PLAYER_RELEASED" clr-name="PlayerReleased" value="1036" />
+    </mapping>
+
+    <mapping jni-class="com/google/android/exoplayer2/ext/cronet/CronetEngineWrapper" clr-enum-type="Google.Android.ExoPlayer2.Ext.Cronet.CronetEngineSource">
+        <field jni-name="SOURCE_NATIVE" clr-name="Native" value="0" />
+        <field jni-name="SOURCE_GMS" clr-name="Gms" value="1" />
+        <field jni-name="SOURCE_UNKNOWN" clr-name="Unknown" value="2" />
+        <field jni-name="SOURCE_USER_PROVIDED" clr-name="UserProvided" value="3" />
+        <field jni-name="SOURCE_UNAVAILABLE" clr-name="Unavailable" value="4" />
+    </mapping>
+
+    <mapping jni-class="com/google/android/exoplayer2/util/RepeatModeUtil" clr-enum-type="Google.Android.ExoPlayer2.Util.RepeatToggleModes" bitfield="true">
+        <field jni-name="REPEAT_TOGGLE_MODE_NONE" clr-name="None" value="0" />
+        <field jni-name="REPEAT_TOGGLE_MODE_ONE" clr-name="One" value="1" />
+        <field jni-name="REPEAT_TOGGLE_MODE_ALL" clr-name="All" value="1 &lt;&lt; 1" />
+    </mapping>
+
+</enum-field-mappings>

@@ -1,0 +1,21 @@
+﻿<metadata>
+
+    <!-- NOTE We removed this node because it was causing issues. -->
+    <!-- BaseRenderer class implements both RendererCapabilities and Renderer interfaces. -->
+    <!-- Both of them has getRenderer method. And BaseRenderer doesn't override this method (java allows to inherits interfaces without their implementation for abstract classes). -->
+    <!-- Bindings generator doesn't handle such case and it fails to compile it properly by default. -->
+    <!-- We're putting back this node in partial C# implementation as string Name get property -->
+    <!-- TODO Make relevant PR to Xamarin/Java.Interop -->
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2']/*[@name='RendererCapabilities']/method[@name='getName' and count(parameter)=0]"/>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='RendererCapabilities']/method[@name='getTrackType']"
+        name="enumReturn">Google.Android.ExoPlayer2.TrackType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='RendererCapabilities']/method[@name='create']
+        /parameter[@name='formatSupport']" name="enumType">Google.Android.ExoPlayer2.FormatSupport</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='RendererCapabilities']/method[@name='getFormatSupport']"
+        name="enumReturn">Google.Android.ExoPlayer2.FormatSupport</attr>
+
+</metadata>

@@ -1,0 +1,8 @@
+﻿<metadata>
+
+    <!-- NOTE Java Bindings Generator doesn't properly support enum arrays, fixing this issue by rerurn attributes -->
+    <!-- TODO Create relevant issue or PR to Xamarin/Java.Interop -->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source']/*[@name='MediaSourceFactory']/method[@name='getSupportedTypes']"
+        name="return">Google.Android.ExoPlayer2.ContentType[]</attr>
+
+</metadata>

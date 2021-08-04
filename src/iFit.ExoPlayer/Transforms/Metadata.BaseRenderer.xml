@@ -1,0 +1,12 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='BaseRenderer']/constructor
+        /parameter[@name='trackType']" name="enumType">Google.Android.ExoPlayer2.TrackType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='BaseRenderer']/method[@name='getTrackType']"
+        name="enumReturn">Google.Android.ExoPlayer2.TrackType</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='BaseRenderer']/method[@name='getState']"
+        name="enumReturn">Google.Android.ExoPlayer2.PlaybackState</attr>
+
+</metadata>

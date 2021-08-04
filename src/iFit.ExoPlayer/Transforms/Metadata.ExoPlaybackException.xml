@@ -1,0 +1,6 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2']/*[@name='ExoPlaybackException']
+        /field[@name='type']" name="enumType">Google.Android.ExoPlayer2.ExoPlaybackExceptionType</attr>
+
+</metadata>

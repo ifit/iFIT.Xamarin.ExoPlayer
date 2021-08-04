@@ -1,0 +1,6 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source']/*[@name='SampleQueue']/method[@name='sampleMetadata']
+        /parameter[@name='flags']" name="enumType">Google.Android.ExoPlayer2.BufferFlags</attr>
+
+</metadata>

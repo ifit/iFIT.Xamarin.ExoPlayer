@@ -1,0 +1,10 @@
+<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.video']/*[not(
+        @name='ColorInfo' or
+        @name='VideoFrameMetadataListener' or
+        @name='VideoListener' or
+        @name='VideoRendererEventListener')
+    ]" />
+
+</metadata>

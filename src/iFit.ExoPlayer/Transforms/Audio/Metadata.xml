@@ -1,0 +1,13 @@
+<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.audio']/*[not(
+        @name='AudioAttributes' or
+        @name='AudioAttributes.Builder' or
+        @name='AudioListener' or
+        @name='AudioRendererEventListener' or
+        @name='AudioSink' or
+        @name='AudioSink.Listener' or
+        @name='AuxEffectInfo'
+    )]" />
+
+</metadata>

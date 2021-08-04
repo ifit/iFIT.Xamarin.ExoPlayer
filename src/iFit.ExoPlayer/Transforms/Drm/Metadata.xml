@@ -1,0 +1,15 @@
+<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.drm']/*[not(
+        @name='DrmInitData' or
+        @name='DrmInitData.SchemeData' or
+        @name='DrmSession' or
+        @name='DrmSession.DrmSessionException' or
+        @name='DrmSessionEventListener' or
+        @name='DrmSessionEventListener.EventDispatcher' or
+        @name='DrmSessionManager' or
+        @name='DrmSessionManagerProvider' or
+        @name='ExoMediaCrypto'
+    )]" />
+
+</metadata>

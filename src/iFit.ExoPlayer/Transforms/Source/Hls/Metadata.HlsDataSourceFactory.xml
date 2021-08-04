@@ -1,0 +1,10 @@
+﻿<metadata>
+
+    <!-- NOTE fixing parameter name -->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source.hls']/*[@name='HlsDataSourceFactory']/method[@name='createDataSource']
+        /parameter[@name='p0']" name="managedName">type</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source.hls']/*[@name='HlsDataSourceFactory']/method[@name='createDataSource']
+        /parameter[@name='p0']" name="enumType">Google.Android.ExoPlayer2.DataType</attr>
+
+</metadata>

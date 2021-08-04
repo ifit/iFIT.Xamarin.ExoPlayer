@@ -1,0 +1,7 @@
+﻿<metadata>
+
+    <!--NOTE Fixing override's return types to its base types since C# doesn't support such feature yet-->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.upstream']/*[@name='DefaultDataSourceFactory']/method[
+        @name='createDataSource' and count(parameter)=0]" name="managedReturn">Google.Android.ExoPlayer2.Upstream.IDataSource</attr>
+
+</metadata>

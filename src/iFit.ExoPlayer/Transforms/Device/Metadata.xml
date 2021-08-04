@@ -1,0 +1,8 @@
+<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.device']/*[not(
+        @name='DeviceInfo' or
+        @name='DeviceListener'
+    )]" />
+
+</metadata>

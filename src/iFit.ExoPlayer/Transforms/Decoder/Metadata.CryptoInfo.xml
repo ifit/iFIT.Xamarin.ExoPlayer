@@ -1,0 +1,9 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.decoder']/*[@name='CryptoInfo']
+        /field[@name='mode']" name="enumType">Google.Android.ExoPlayer2.CryptoMode</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.decoder']/*[@name='CryptoInfo']/method[@name='set']
+        /parameter[@name='mode']" name="enumType">Google.Android.ExoPlayer2.CryptoMode</attr>
+
+</metadata>

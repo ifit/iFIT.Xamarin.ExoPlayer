@@ -1,0 +1,12 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.extractor']/*[@name='TrackOutput.CryptoData']/field[@name='cryptoMode']"
+        name="enumType">Google.Android.ExoPlayer2.CryptoMode</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.extractor']/*[@name='TrackOutput.CryptoData']/constructor
+        /parameter[@name='cryptoMode']" name="enumType">Google.Android.ExoPlayer2.CryptoMode</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.extractor']/*[@name='TrackOutput']/method[@name='sampleMetadata']
+        /parameter[@name='p1']" name="enumType">Google.Android.ExoPlayer2.BufferFlags</attr>
+
+</metadata>

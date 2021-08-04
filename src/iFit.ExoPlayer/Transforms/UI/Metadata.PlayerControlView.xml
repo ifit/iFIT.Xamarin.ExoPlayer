@@ -1,0 +1,13 @@
+﻿<metadata>
+
+    <!-- Remove Deprecated Method: Use setControlDispatcher(ControlDispatcher) instead. -->
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.ui']/*[@name='PlayerControlView']/method[
+        @name='setPlaybackPreparer' and count(parameter)=1]"/>
+
+    <!--NOTE Putting override and protected keyword-->    
+    <attr path="/api/package[@name='com.google.android.exoplayer2.ui']/*[@name='PlayerControlView']/method[@name='onAttachedToWindow' and count(parameter)=0]" name="managedOverride">override</attr>
+    <attr path="/api/package[@name='com.google.android.exoplayer2.ui']/*[@name='PlayerControlView']/method[@name='onAttachedToWindow' and count(parameter)=0]" name="visibility">protected</attr>
+    <attr path="/api/package[@name='com.google.android.exoplayer2.ui']/*[@name='PlayerControlView']/method[@name='onDetachedFromWindow' and count(parameter)=0]" name="managedOverride">override</attr>
+    <attr path="/api/package[@name='com.google.android.exoplayer2.ui']/*[@name='PlayerControlView']/method[@name='onDetachedFromWindow' and count(parameter)=0]" name="visibility">protected</attr>
+
+</metadata>

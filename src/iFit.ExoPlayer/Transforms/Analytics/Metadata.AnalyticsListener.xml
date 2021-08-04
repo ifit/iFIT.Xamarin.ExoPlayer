@@ -1,0 +1,34 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.analytics']/*[@name='AnalyticsListener.Events']/method[@name='getEventTime']
+        /parameter[@name='event']" name="enumType">Google.Android.ExoPlayer2.Analytics.AnalyticsEventFlags</attr>
+
+    <!-- NOTE renaming this parameter for consistency with AnalyticsListenerEvents.cs addition. By default it transforms 'event' name to just 'e' -->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.analytics']/*[@name='AnalyticsListener.Events']/method[@name='getEventTime']
+        /parameter[@name='event']" name="managedName">eventFlag</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.analytics']/*[@name='AnalyticsListener']/method[@name='onPositionDiscontinuity']
+        /parameter[@name='reason']" name="enumType">Google.Android.ExoPlayer2.DiscontinuityReason</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.analytics']/*[@name='AnalyticsListener']/method[@name='onTimelineChanged']
+        /parameter[@name='reason']" name="enumType">Google.Android.ExoPlayer2.TimelineChangeReason</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.analytics']/*[@name='AnalyticsListener']/method[@name='onMediaItemTransition']
+        /parameter[@name='reason']" name="enumType">Google.Android.ExoPlayer2.MediaItemTransitionReason</attr>
+    
+    <attr path="/api/package[@name='com.google.android.exoplayer2.analytics']/*[@name='AnalyticsListener']/method[@name='onPlayerStateChanged']
+        /parameter[@name='playbackState']" name="enumType">Google.Android.ExoPlayer2.PlaybackState</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.analytics']/*[@name='AnalyticsListener']/method[@name='onPlaybackStateChanged']
+        /parameter[@name='state']" name="enumType">Google.Android.ExoPlayer2.PlaybackState</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.analytics']/*[@name='AnalyticsListener']/method[@name='onPlayWhenReadyChanged']
+        /parameter[@name='reason']" name="enumType">Google.Android.ExoPlayer2.PlayWhenReadyChangeReason</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.analytics']/*[@name='AnalyticsListener']/method[@name='onPlaybackSuppressionReasonChanged']
+        /parameter[@name='playbackSuppressionReason']" name="enumType">Google.Android.ExoPlayer2.PlaybackSuppressionReason</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.analytics']/*[@name='AnalyticsListener']/method[@name='onRepeatModeChanged']
+        /parameter[@name='repeatMode']" name="enumType">Google.Android.ExoPlayer2.RepeatMode</attr>
+
+</metadata>

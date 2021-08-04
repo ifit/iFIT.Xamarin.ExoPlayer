@@ -1,0 +1,8 @@
+<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source.mediaparser']/*[not(
+        @name='InputReaderAdapterV30' or
+        @name='OutputConsumerAdapterV30'
+    )]" />
+
+</metadata>

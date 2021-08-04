@@ -1,0 +1,26 @@
+﻿<metadata>
+
+    <!--NOTE Fixing override's return types to its base types since C# doesn't support such feature yet-->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source']/*[@name='ProgressiveMediaSource.Factory']/method[
+        @name='setDrmHttpDataSourceFactory' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer2.upstream.HttpDataSource.Factory'] or
+        @name='setDrmSessionManager' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer2.drm.DrmSessionManager'] or
+        @name='setDrmSessionManagerProvider' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer2.drm.DrmSessionManagerProvider'] or
+        @name='setDrmUserAgent' and count(parameter)=1 and parameter[1][@type='java.lang.String'] or
+        @name='setLoadErrorHandlingPolicy' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer2.upstream.LoadErrorHandlingPolicy']
+    ]" name="managedReturn">Google.Android.ExoPlayer2.Source.IMediaSourceFactory</attr>
+
+    <!--NOTE Fixing override's return types to its base types since C# doesn't support such feature yet-->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source']/*[@name='ProgressiveMediaSource.Factory']/method[
+        @name='createMediaSource' and count(parameter)=1 and parameter[1][@type='com.google.android.exoplayer2.MediaItem']
+    ]" name="managedReturn">Google.Android.ExoPlayer2.Source.IMediaSource</attr>
+
+    <!-- NOTE Java Bindings Generator doesn't properly support enum arrays, fixing this issue by rerurn attributes -->
+    <!-- TODO Create relevant issue or PR to Xamarin/Java.Interop -->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source']/*[@name='ProgressiveMediaSource.Factory']/method[@name='getSupportedTypes']"
+        name="return">Google.Android.ExoPlayer2.ContentType[]</attr>
+
+    <!-- NOTE this interface is package-internal, so we do not expose it outside -->
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/*[@name='ProgressiveMediaSource']/implements[
+            @name='com.google.android.exoplayer2.source.ProgressiveMediaPeriod.Listener']" />
+
+</metadata>

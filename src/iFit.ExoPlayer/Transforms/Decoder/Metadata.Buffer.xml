@@ -1,0 +1,12 @@
+﻿<metadata>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.decoder']/*[@name='Buffer']/method[@name='setFlags']
+        /parameter[@name='flags']" name="enumType">Google.Android.ExoPlayer2.BufferFlags</attr>
+
+    <attr path="/api/package[@name='com.google.android.exoplayer2.decoder']/*[@name='Buffer']/method[
+        @name='addFlag' or
+        @name='clearFlag' or
+        @name='getFlag'
+    ]/parameter[@name='flag']" name="enumType">Google.Android.ExoPlayer2.BufferFlags</attr>
+
+</metadata>

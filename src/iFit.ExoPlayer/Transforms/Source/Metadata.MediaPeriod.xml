@@ -1,0 +1,12 @@
+<metadata>
+
+    <!--NOTE Removing unnecessary nodes which are already implemented in base members-->
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/*[@name='MediaPeriod']/method[
+        @name='getBufferedPositionUs' and count(parameter)=0 or
+        @name='isLoading' and count(parameter)=0 or
+        @name='getNextLoadPositionUs' and count(parameter)=0 or
+        @name='continueLoading' and count(parameter)=1 and parameter[1][@type='long'] or
+        @name='reevaluateBuffer' and count(parameter)=1 and parameter[1][@type='long']
+    ]" />
+
+</metadata>

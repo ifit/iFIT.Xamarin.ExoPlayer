@@ -1,0 +1,31 @@
+<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.trackselection']/*[not(
+        @name='AdaptiveTrackSelection' or
+        @name='AdaptiveTrackSelection.Factory' or
+        @name='AdaptiveTrackSelection.AdaptationCheckpoint' or
+        @name='BaseTrackSelection' or
+        @name='DefaultTrackSelector' or
+        @name='DefaultTrackSelector.Parameters' or
+        @name='DefaultTrackSelector.ParametersBuilder' or
+        @name='DefaultTrackSelector.SelectionOverride' or
+        @name='DefaultTrackSelector.TextTrackScore' or
+        @name='ExoTrackSelection' or
+        @name='ExoTrackSelection.Definition' or
+        @name='ExoTrackSelection.Factory' or
+        @name='FixedTrackSelection' or
+        @name='FixedTrackSelection.Factory' or
+        @name='MappingTrackSelector' or
+        @name='MappingTrackSelector.MappedTrackInfo' or
+        @name='RandomTrackSelection' or
+        @name='RandomTrackSelection.Factory' or
+        @name='TrackSelection' or
+        @name='TrackSelectionArray' or
+        @name='TrackSelectionParameters' or
+        @name='TrackSelectionParameters.Builder' or
+        @name='TrackSelector' or
+        @name='TrackSelector.InvalidationListener' or
+        @name='TrackSelectorResult'
+    )]" />
+
+</metadata>

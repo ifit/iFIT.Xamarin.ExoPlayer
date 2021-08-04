@@ -1,0 +1,23 @@
+<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.util']/*[not(
+        @name='Clock' or
+        @name='ErrorMessageProvider' or
+        @name='EventLogger' or
+        @name='HandlerWrapper' or
+        @name='ListenerSet' or
+        @name='ListenerSet.Event' or
+        @name='ListenerSet.IterationFinishedEvent' or
+        @name='LongArray' or
+        @name='MediaClock' or
+        @name='MimeTypes' or
+        @name='MutableFlags' or
+        @name='ParsableBitArray' or
+        @name='ParsableByteArray' or
+        @name='PriorityTaskManager' or
+        @name='TimestampAdjuster' or
+        @name='Util' or
+        @name='RepeatModeUtil'
+    )]" />
+
+</metadata>

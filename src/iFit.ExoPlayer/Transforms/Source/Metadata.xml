@@ -1,0 +1,37 @@
+﻿<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.source']/*[not(
+        @name='BaseMediaSource' or
+        @name='CompositeMediaSource' or
+        @name='CompositeSequenceableLoaderFactory' or
+        @name='DefaultMediaSourceFactory' or
+        @name='DefaultMediaSourceFactory.AdsLoaderProvider' or
+        @name='IcyDataSource' or
+        @name='IcyDataSource.Listener' or
+        @name='LoadEventInfo' or
+        @name='MediaLoadData' or
+        @name='MediaPeriod' or
+        @name='MediaPeriod.Callback' or
+        @name='MediaPeriodId' or
+        @name='MediaSource' or
+        @name='MediaSource.MediaPeriodId' or
+        @name='MediaSource.MediaSourceCaller' or
+        @name='MediaSourceEventListener' or
+        @name='MediaSourceEventListener.EventDispatcher' or
+        @name='MediaSourceFactory' or
+        @name='ProgressiveMediaPeriod' or
+        @name='ProgressiveMediaPeriod.ExtractingLoadable' or
+        @name='ProgressiveMediaPeriod.Listener' or
+        @name='ProgressiveMediaSource' or
+        @name='ProgressiveMediaSource.Factory' or
+        @name='SampleQueue' or
+        @name='SampleQueue.UpstreamFormatChangedListener' or
+        @name='SampleStream' or
+        @name='SequenceableLoader' or
+        @name='SequenceableLoader.Callback' or
+        @name='ShuffleOrder' or
+        @name='TrackGroup' or
+        @name='TrackGroupArray'
+    )]" />
+
+</metadata>

@@ -1,0 +1,13 @@
+<metadata>
+
+    <!-- NOTE In Java world this abstract class doesn't implement this method from the implemented interface -->
+    <!-- C# doesn't have such feature. All implmented interfaces members should exist in base class -->
+    <!-- That's why we have added this abstract member -->
+    <add-node path="/api/package[@name='com.google.android.exoplayer2.source.hls.playlist']/*[@name='HlsPlaylist']">
+        <method abstract="true" deprecated="not deprecated" final="false" name="copy" native="false" return="com.google.android.exoplayer2.source.hls.playlist.HlsPlaylist" static="false" synchronized="false" visibility="public">
+            <parameter name="streamKeys" type="java.util.List&lt;com.google.android.exoplayer2.offline.StreamKey&gt;">
+            </parameter>
+        </method>
+    </add-node>
+
+</metadata>

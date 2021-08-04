@@ -1,0 +1,8 @@
+<metadata>
+
+    <!-- NOTE Removing this node since we're explicitly declaring in in Additions\Util\IClock.cs. -->
+    <!-- Doing this because bindings generator fails to add static member to the interface and generated class is marked as obsolete -->
+    <!-- TODO Add relevant PR to Xamarin/Java.Interop -->
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.util']/*[@name='Clock']/field[@name='DEFAULT']" />
+
+</metadata>

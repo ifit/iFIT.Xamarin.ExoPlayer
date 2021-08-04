@@ -1,0 +1,7 @@
+<metadata>
+
+    <!--NOTE Updating attribute to fix the issue: we had a duplicate method and field name -->
+    <attr path="/api/package[@name='com.google.android.exoplayer2.trackselection']/*[@name='BaseTrackSelection']
+        /field[@name='length']" name="managedName">LengthStorage</attr>
+
+</metadata>

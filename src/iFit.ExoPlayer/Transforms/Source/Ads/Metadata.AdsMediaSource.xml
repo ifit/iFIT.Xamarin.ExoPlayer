@@ -1,0 +1,8 @@
+<metadata>
+
+    <!--NOTE Changed signature of the onChildSourceInfoRefreshsed method in order to make the correct inheritance -->    
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source.ads']/*[@name='AdsMediaSource']/method[@name='onChildSourceInfoRefreshed' and count(parameter)=3 and parameter[1][@type='com.google.android.exoplayer2.source.MediaSource.MediaPeriodId'] and parameter[2][@type='com.google.android.exoplayer2.source.MediaSource'] and parameter[3][@type='com.google.android.exoplayer2.Timeline']]" name="managedOverride">override</attr>
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source.ads']/*[@name='AdsMediaSource']/method[@name='onChildSourceInfoRefreshed' and count(parameter)=3 and parameter[1][@type='com.google.android.exoplayer2.source.MediaSource.MediaPeriodId'] and parameter[2][@type='com.google.android.exoplayer2.source.MediaSource'] and parameter[3][@type='com.google.android.exoplayer2.Timeline']]" name="visibility">protected</attr>
+    <attr path="/api/package[@name='com.google.android.exoplayer2.source.ads']/*[@name='AdsMediaSource']/method[@name='onChildSourceInfoRefreshed']/parameter[@name='mediaPeriodId']" name="managedType">Java.Lang.Object</attr>
+
+</metadata>

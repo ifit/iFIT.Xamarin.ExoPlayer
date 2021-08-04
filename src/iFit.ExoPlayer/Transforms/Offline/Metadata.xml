@@ -1,0 +1,8 @@
+<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.offline']/*[not(
+        @name='FilterableManifest' or
+        @name='StreamKey'
+    )]" />
+
+</metadata>

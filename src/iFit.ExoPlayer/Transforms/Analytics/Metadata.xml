@@ -1,0 +1,10 @@
+<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.analytics']/*[not(
+        @name='AnalyticsCollector' or
+        @name='AnalyticsListener' or
+        @name='AnalyticsListener.EventTime' or
+        @name='AnalyticsListener.Events'
+    )]" />
+
+</metadata>

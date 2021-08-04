@@ -1,0 +1,75 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras">
+  <PropertyGroup>
+    <TargetFrameworks>monoandroid10.0;monoandroid11.0</TargetFrameworks>
+    <AssemblyName>iFIT.ExoPlayer</AssemblyName>
+    <RootNamespace>Google.Android.ExoPlayer2</RootNamespace>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>iFIT.ExoPlayer</PackageId>
+    <PackageVersion>2.13.3.2</PackageVersion>
+    <Owners>iFIT</Owners>
+    <Authors>iFIT Mobile, Taras Shevchuk, Michael Hope</Authors>
+    <Summary>ExoPlayer bindings library</Summary>
+    <Description>ExoPlayer bindings library</Description>
+    <Title>iFIT.ExoPlayer</Title>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/ifit/iFIT.ExoPlayer</PackageProjectUrl>
+    <PackageTags>ifit, xamarin, android, xamarin-android, xamarin.android, exoplayer, video</PackageTags>
+    <IsBindingProject>true</IsBindingProject>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
+    <_EnableInterfaceMembers>true</_EnableInterfaceMembers>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidDexTool>d8</AndroidDexTool>
+    <AndroidLinkTool>r8</AndroidLinkTool>
+    <DisableExtraReferences>true</DisableExtraReferences>
+    <!-- NOTE enabling it can cause error with creating void? return method -->
+    <!-- in com.google.android.exoplayer2.metadata.MetadataOutput (and maybe somewhere else as well)-->
+    <Nullable>disable</Nullable>
+    <!--0169 - Despite we removed the eventName-s creation, generator still produces weak-reference fields for EventHandlers-->
+    <!--However, we never use these fields, thus, the compiler warns us about it. It is just a bindings generator mistake-->
+    <!--And it has zero-effect for us, so we can just suppress this warning in order to keep the 0-warning tolerance rule-->
+    <!--0809 - Java bindings generator fails to add Obsolete attributes on deprecated members, but it do this in invokers-->
+    <NoWarn>0169;0809</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+
+    <DesignTimeBuild>false</DesignTimeBuild>
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Additions\**\*.cs" />
+    <TransformFile Include="Transforms\**\*.xml" />
+    <LibraryProjectZip Include="..\AndroidStudio\ExoPlayer\build\outputs\aar\ExoPlayer-release.aar">
+      <Link>Jars\ExoPlayer-release.aar</Link>
+    </LibraryProjectZip>
+    <None Include="icon.png" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.Annotation" Version="1.1.0.9" />
+    <PackageReference Include="Xamarin.AndroidX.Arch.Core.Common" Version="2.1.0.8" />
+    <PackageReference Include="Xamarin.AndroidX.Arch.Core.Runtime" Version="2.1.0.8" />
+    <PackageReference Include="Xamarin.AndroidX.Collection" Version="1.1.0.7" />
+    <PackageReference Include="Xamarin.AndroidX.Core" Version="1.3.2.3" />
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common" Version="2.3.0.1" />
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.3.0.1" />
+    <PackageReference Include="Xamarin.AndroidX.Media" Version="1.2.1.2" />
+    <PackageReference Include="Xamarin.AndroidX.RecyclerView" Version="1.1.0.8" />
+    <PackageReference Include="Xamarin.AndroidX.VersionedParcelable" Version="1.1.1.7" />
+    <PackageReference Include="Xamarin.Google.Guava" Version="28.2.0" />
+    <PackageReference Include="Xamarin.Google.Guava.FailureAccess" Version="1.0.1.2" />
+    <PackageReference Include="Xamarin.Google.Guava.ListenableFuture" Version="1.0.0.2" />
+    <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.4.20" />
+    <PackageReference Include="Xamarin.GooglePlayServices.CroNet" Version="117.0.0" />
+  </ItemGroup>
+</Project>

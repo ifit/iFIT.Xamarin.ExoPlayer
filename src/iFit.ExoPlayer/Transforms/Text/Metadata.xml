@@ -1,0 +1,17 @@
+<metadata>
+
+    <remove-node path="/api/package[@name='com.google.android.exoplayer2.text']/*[not(
+        @name='CaptionStyleCompat' or
+        @name='Cue' or
+        @name='Cue.Builder' or
+        @name='Subtitle' or
+        @name='SubtitleDecoder' or
+        @name='SubtitleDecoderException' or
+        @name='SubtitleDecoderFactory' or
+        @name='SubtitleInputBuffer' or
+        @name='SubtitleOutputBuffer' or
+        @name='TextOutput' or
+        @name='TextRenderer'
+    )]" />
+
+</metadata>
