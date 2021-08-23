@@ -1,6 +1,6 @@
-# iFIT.ExoPlayer
-[![Build](https://github.com/ifit/iFIT.ExoPlayer/actions/workflows/build_and_publish_nuget.yml/badge.svg)][Build] 
-[![Nuget](https://img.shields.io/nuget/v/iFIT.ExoPlayer)][Nuget]
+# iFIT.Xamarin.ExoPlayer
+[![Build](https://github.com/ifit/iFIT.Xamarin.ExoPlayer/actions/workflows/build_and_publish_nuget.yml/badge.svg?branch=release)][Build] 
+[![Nuget](https://img.shields.io/nuget/v/iFIT.Xamarin.ExoPlayer)][Nuget]
 
 Xamarin.Android bindings library for the [ExoPlayer][].  
 Built with [Sufficient Bindings Approach][SBA article].
@@ -42,16 +42,16 @@ Please note, that this bindings library includes the following java libraries co
 
 ## Using ExoPlayer ##
 
-The ExoPlayer plugin is available on [Nuget][].
+The iFIT.Xamarin.ExoPlayer package is available on [Nuget][].
 
 Check out the sample project in order to understand how to use the ExoPlayer in your applicaiton.
 
 For more details it's better to check the [developer guide][], the API is very similar to the C# code so it should be easy to translate from java world.
 
 [ExoPlayer]: https://exoplayer.dev
-[Build]: https://github.com/ifit/iFIT.ExoPlayer/actions/workflows/build_and_publish_nuget.yml
-[Nuget]: https://www.nuget.org/packages/iFIT.ExoPlayer
-[SBA article]: https://medium.com/@saratsin/how-to-bind-a-complex-android-library-for-xamarin-with-sba-9a4a8ec0c65f
+[Build]: https://github.com/ifit/iFIT.Xamarin.ExoPlayer/actions/workflows/build_and_publish_nuget.yml
+[Nuget]: https://www.nuget.org/packages/iFIT.Xamarin.ExoPlayer
+[SBA article]: https://saratsin.medium.com/how-to-bind-a-complex-android-library-for-xamarin-with-sba-9a4a8ec0c65f
 [developer guide]: https://google.github.io/ExoPlayer/guide.html
 [class reference]: https://google.github.io/ExoPlayer/doc/reference
 [release notes]: https://github.com/google/ExoPlayer/blob/release-v2/RELEASENOTES.md

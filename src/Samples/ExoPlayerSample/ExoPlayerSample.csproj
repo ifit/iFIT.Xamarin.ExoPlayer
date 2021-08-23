@@ -107,9 +107,9 @@
     <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.4.20" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\iFit.ExoPlayer\iFit.ExoPlayer.csproj">
+    <ProjectReference Include="..\..\iFIT.Xamarin.ExoPlayer\iFIT.Xamarin.ExoPlayer.csproj">
       <Project>{73F43C00-3A27-4113-B4BA-2BF07514080C}</Project>
-      <Name>iFit.ExoPlayer</Name>
+      <Name>iFIT.Xamarin.ExoPlayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
