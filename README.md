@@ -51,7 +51,7 @@ For more details it's better to check the [developer guide][], the API is very s
 [ExoPlayer]: https://exoplayer.dev
 [Build]: https://github.com/ifit/iFIT.ExoPlayer/actions/workflows/build_and_publish_nuget.yml
 [Nuget]: https://www.nuget.org/packages/iFIT.ExoPlayer
-[SBA article]: https://medium.com/@saratsin/how-to-bind-a-complex-android-library-for-xamarin-with-sba-9a4a8ec0c65f
+[SBA article]: https://saratsin.medium.com/how-to-bind-a-complex-android-library-for-xamarin-with-sba-9a4a8ec0c65f
 [developer guide]: https://google.github.io/ExoPlayer/guide.html
 [class reference]: https://google.github.io/ExoPlayer/doc/reference
 [release notes]: https://github.com/google/ExoPlayer/blob/release-v2/RELEASENOTES.md
