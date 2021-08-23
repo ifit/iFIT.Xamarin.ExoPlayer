@@ -29,6 +29,8 @@ jobs:
       run: nuget restore src/iFIT.ExoPlayer.sln
     - name: Build
       run: msbuild src/iFIT.ExoPlayer/iFIT.ExoPlayer.csproj /property:Configuration=Release /warnaserror
+    - name: Sample Project Build Check
+      run: msbuild src/Samples/ExoPlayerSample/ExoPlayerSample.csproj /property:Configuration=Release /warnaserror
     - name: Publish
       uses: dansiegel/publish-nuget@v1.01
       with:
