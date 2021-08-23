@@ -13,7 +13,7 @@ namespace Google.Android.ExoPlayer2
     {
         string Name {
             // Metadata.xml XPath method reference: path="/api/package[@name='com.google.android.exoplayer2']/interface[@name='RendererCapabilities']/method[@name='getName' and count(parameter)=0]"
-            [Register ("getName", "()Ljava/lang/String;", "GetGetNameHandler:Google.Android.ExoPlayer2.IRendererCapabilitiesInvoker, iFit.ExoPlayer")]
+            [Register ("getName", "()Ljava/lang/String;", "GetGetNameHandler:Google.Android.ExoPlayer2.IRendererCapabilitiesInvoker, iFIT.Xamarin.ExoPlayer")]
             get; 
         }
 

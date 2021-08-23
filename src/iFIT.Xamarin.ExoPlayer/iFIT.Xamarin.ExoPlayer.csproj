@@ -1,19 +1,19 @@
 ﻿<Project Sdk="MSBuild.Sdk.Extras">
   <PropertyGroup>
     <TargetFrameworks>monoandroid10.0;monoandroid11.0</TargetFrameworks>
-    <AssemblyName>iFIT.ExoPlayer</AssemblyName>
+    <AssemblyName>iFIT.Xamarin.ExoPlayer</AssemblyName>
     <RootNamespace>Google.Android.ExoPlayer2</RootNamespace>
     <PackOnBuild>true</PackOnBuild>
-    <PackageId>iFIT.ExoPlayer</PackageId>
+    <PackageId>iFIT.Xamarin.ExoPlayer</PackageId>
     <PackageVersion>2.13.3.2</PackageVersion>
     <Owners>iFIT</Owners>
     <Authors>iFIT Mobile, Taras Shevchuk, Michael Hope</Authors>
     <Summary>ExoPlayer bindings library</Summary>
     <Description>ExoPlayer bindings library</Description>
-    <Title>iFIT.ExoPlayer</Title>
+    <Title>iFIT.Xamarin.ExoPlayer</Title>
     <PackageIcon>icon.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/ifit/iFIT.ExoPlayer</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/ifit/iFIT.Xamarin.ExoPlayer</PackageProjectUrl>
     <PackageTags>ifit, xamarin, android, xamarin-android, xamarin.android, exoplayer, video</PackageTags>
     <IsBindingProject>true</IsBindingProject>
     <EnableDefaultItems>false</EnableDefaultItems>

@@ -26,13 +26,13 @@ jobs:
       working-directory: src/AndroidStudio
       run: ./gradlew bundleReleaseAar
     - name: Nuget Restore
-      run: nuget restore src/iFIT.ExoPlayer.sln
+      run: nuget restore src/iFIT.Xamarin.ExoPlayer.sln
     - name: Build
-      run: msbuild src/iFIT.ExoPlayer/iFIT.ExoPlayer.csproj /property:Configuration=Release /warnaserror
+      run: msbuild src/iFIT.Xamarin.ExoPlayer/iFIT.Xamarin.ExoPlayer.csproj /property:Configuration=Release /warnaserror
     - name: Sample Project Build Check
       run: msbuild src/Samples/ExoPlayerSample/ExoPlayerSample.csproj /property:Configuration=Release /warnaserror
     - name: Publish
       uses: dansiegel/publish-nuget@v1.01
       with:
-        filename: 'src/iFIT.ExoPlayer/bin/Release/iFIT.ExoPlayer.*.nupkg'
+        filename: 'src/iFIT.Xamarin.ExoPlayer/bin/Release/iFIT.Xamarin.ExoPlayer.*.nupkg'
         apiKey: ${{ secrets.NUGET_API_KEY }}
