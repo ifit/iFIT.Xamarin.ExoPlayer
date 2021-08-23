@@ -9,7 +9,7 @@ namespace Google.Android.ExoPlayer2.Source.Hls.Playlist
     public partial interface IHlsPlaylistTrackerPlaylistEventListener
     {
         // Metadata.xml XPath method reference: path="/api/package[@name='com.google.android.exoplayer2.source.hls.playlist']/interface[@name='HlsPlaylistTracker.PlaylistEventListener']/method[@name='onPlaylistError' and count(parameter)=2 and parameter[1][@type='android.net.Uri'] and parameter[2][@type='long']]"
-        [Register ("onPlaylistError", "(Landroid/net/Uri;J)Z", "GetOnPlaylistError_Landroid_net_Uri_JHandler:Google.Android.ExoPlayer2.Source.Hls.Playlist.IHlsPlaylistTrackerPlaylistEventListenerInvoker, iFit.ExoPlayer")]
+        [Register ("onPlaylistError", "(Landroid/net/Uri;J)Z", "GetOnPlaylistError_Landroid_net_Uri_JHandler:Google.Android.ExoPlayer2.Source.Hls.Playlist.IHlsPlaylistTrackerPlaylistEventListenerInvoker, iFIT.Xamarin.ExoPlayer")]
         bool OnPlaylistError (global::Android.Net.Uri p0, long p1);
 
     }

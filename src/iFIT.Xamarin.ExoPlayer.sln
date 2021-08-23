@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iFit.ExoPlayer", "iFit.ExoPlayer\iFit.ExoPlayer.csproj", "{73F43C00-3A27-4113-B4BA-2BF07514080C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iFIT.Xamarin.ExoPlayer", "iFIT.Xamarin.ExoPlayer\iFIT.Xamarin.ExoPlayer.csproj", "{73F43C00-3A27-4113-B4BA-2BF07514080C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{A35EF82E-EBD8-4E99-853B-45CFE24138E8}"
 EndProject
