@@ -5,7 +5,7 @@
     <RootNamespace>Google.Android.ExoPlayer2</RootNamespace>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>iFIT.Xamarin.ExoPlayer</PackageId>
-    <PackageVersion>2.13.3.3</PackageVersion>
+    <PackageVersion>2.13.3.4</PackageVersion>
     <Owners>iFIT</Owners>
     <Authors>iFIT Mobile, Taras Shevchuk, Michael Hope</Authors>
     <Summary>ExoPlayer bindings library</Summary>
