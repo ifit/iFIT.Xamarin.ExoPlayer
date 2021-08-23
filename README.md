@@ -1,5 +1,5 @@
 # iFIT.Xamarin.ExoPlayer
-[![Build](https://github.com/ifit/iFIT.Xamarin.ExoPlayer/actions/workflows/build_and_publish_nuget.yml/badge.svg)][Build] 
+[![Build](https://github.com/ifit/iFIT.Xamarin.ExoPlayer/actions/workflows/build_and_publish_nuget.yml/badge.svg?branch=release)][Build] 
 [![Nuget](https://img.shields.io/nuget/v/iFIT.Xamarin.ExoPlayer)][Nuget]
 
 Xamarin.Android bindings library for the [ExoPlayer][].  
