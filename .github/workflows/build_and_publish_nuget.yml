@@ -2,7 +2,8 @@ name: build
 
 on:
   push:
-    branches: [ main ]
+    branches: [ release ]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -16,12 +17,12 @@ jobs:
       with:
         java-version: '11'
         distribution: 'adopt'
+    - name: Validate Gradle wrapper
+      uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
     - name: MSBuild Setup
       uses: microsoft/setup-msbuild@v1.0.2
     - name: Nuget Setup
       uses: nuget/setup-nuget@v1.0.5
-    - name: Validate Gradle wrapper
-      uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
     - name: Build AAR with Gradle
       working-directory: src/AndroidStudio
       run: ./gradlew bundleReleaseAar
@@ -29,6 +30,8 @@ jobs:
       run: nuget restore src/iFIT.ExoPlayer.sln
     - name: Build
       run: msbuild src/iFIT.ExoPlayer/iFIT.ExoPlayer.csproj /property:Configuration=Release /warnaserror
+    - name: Sample Project Build Check
+      run: msbuild src/Samples/ExoPlayerSample/ExoPlayerSample.csproj /property:Configuration=Release /warnaserror
     - name: Publish
       uses: dansiegel/publish-nuget@v1.01
       with:
