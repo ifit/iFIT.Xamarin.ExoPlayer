@@ -1,7 +1,6 @@
 {
   "scanSettings": {
-    "configMode": "AUTO",
-    "configExternalURL": "",
+    "configMode": "LOCAL",
     "projectToken": "",
     "baseBranches": []
   },
