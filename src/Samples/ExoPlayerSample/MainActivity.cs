@@ -3,7 +3,6 @@ using Android.OS;
 using Android.Runtime;
 using AndroidX.AppCompat.App;
 using Google.Android.ExoPlayer2;
-using Google.Android.ExoPlayer2.Additions.Analytics;
 using Google.Android.ExoPlayer2.Analytics;
 using Google.Android.ExoPlayer2.Source.Hls;
 using Google.Android.ExoPlayer2.UI;
