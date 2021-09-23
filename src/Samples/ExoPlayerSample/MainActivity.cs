@@ -3,6 +3,7 @@ using Android.OS;
 using Android.Runtime;
 using AndroidX.AppCompat.App;
 using Google.Android.ExoPlayer2;
+using Google.Android.ExoPlayer2.Analytics;
 using Google.Android.ExoPlayer2.Source.Hls;
 using Google.Android.ExoPlayer2.UI;
 using Google.Android.ExoPlayer2.Upstream;
@@ -35,6 +36,8 @@ namespace ExoPlayerSample
             var mediaSource = mediaSourceFactory.CreateMediaSource(mediaItem);
             player.SetMediaSource(mediaSource, 0);
             player.Prepare();
+            var playbackStatsListener = new PlaybackStatsListener(false, null);
+            player.AddAnalyticsListener(playbackStatsListener);
 
             playerView.Player = player;
         }
