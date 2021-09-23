@@ -56,3 +56,12 @@ For more details it's better to check the [developer guide][], the API is very s
 [class reference]: https://google.github.io/ExoPlayer/doc/reference
 [release notes]: https://github.com/google/ExoPlayer/blob/release-v2/RELEASENOTES.md
 [developer blog]: https://medium.com/google-exoplayer
+
+## How to build  Android Studio project ##
+
+0. Install Android Studio
+1. Set JAVA_HOME to Open JDK embedded into Android Studio (default is C:\Program Files\Android\jdk\microsoft_dist_openjdk_1.8.0.25)
+2. Accept licenses (run %ANDROID_HOME%/tools/bin/sdkmanager --licenses )
+3. Remove any gradle cache (clear the $HOME/.gradle/caches/ )
+4. Force gradle to refresh dependencies ( gradlew build --refresh-dependencies )
+5. Go to Android Studio and build the project in Release configuration
