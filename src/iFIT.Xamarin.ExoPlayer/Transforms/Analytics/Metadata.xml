@@ -5,6 +5,8 @@
         @name='AnalyticsListener' or
         @name='AnalyticsListener.EventTime' or
         @name='AnalyticsListener.Events' or
+        @name='PlaybackSessionManager' or
+        @name='PlaybackSessionManager.Listener' or
         @name='PlaybackStats' or
         @name='PlaybackStatsListener' or
         @name='PlaybackStatsListener.Callback'
