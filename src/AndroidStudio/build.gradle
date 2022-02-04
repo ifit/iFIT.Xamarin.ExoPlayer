@@ -16,7 +16,7 @@ buildscript {
         androidx_recyclerview_version='1.1.0'
         androidx_versionedparcelable_version='1.1.1'
 
-        guava_version='28.2-android'
+        guava_version='28.2-jre'
         guava_failureaccess_version='1.0.1'
         guava_listenablefuture_version='9999.0-empty-to-avoid-conflict-with-guava'
 
